@@ -1,0 +1,26 @@
+{
+  "name": "zahrada1",
+  "version": "1.0.0",
+  "description": "Záhradné centrum Huncovce",
+  "author": "l0st0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "nuxt": "^2.0.0"
+  },
+  "devDependencies": {
+    "@bazzite/nuxt-optimized-images": "^0.2.1",
+    "@nuxtjs/style-resources": "^1.0.0",
+    "imagemin-mozjpeg": "^8.0.0",
+    "imagemin-pngquant": "^8.0.0",
+    "lazysizes": "^5.2.0-beta1",
+    "node-sass": "^4.13.0",
+    "sass-loader": "^8.0.0",
+    "webp-loader": "^0.5.0"
+  }
+}
