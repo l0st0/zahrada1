@@ -1,184 +1,137 @@
 <template>
-  <nav class="nav" id="nav">
-    <div class="nav-desktop">
-      <nuxt-link to="/" class="logo">
-        <img class="logo__svg" src="@/assets/img/logo.svg" />
-        <span class="domov">Záhradné centrum</span>
-      </nuxt-link>
-      <div class="nav-desktop__items">
-        <div>
-          <nuxt-link to="/galeria/altanky" class="nav-desktop__a">Galéria</nuxt-link>
+  <div class="nav">
+    <input type="checkbox" id="nav-check" />
+    <div class="nav-header">
+      <div class="nav-title">JoGeek</div>
+    </div>
+    <div class="nav-btn">
+      <label for="nav-check">
+        <div id="example" v-on:click="toggle" class="hamburger hamburger--slider" type="button">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
         </div>
-        <div>
-          <nuxt-link to="/ponuka" class="nav-desktop__a">Aktuálna ponuka</nuxt-link>
-        </div>
-        <div>
-          <nuxt-link to="/vyroba" class="nav-desktop__a">Výroba na mieru</nuxt-link>
-        </div>
-        <div class="nav-box">
-          <nuxt-link to="/kontakt" class="nav-desktop__a">Kontakt</nuxt-link>
-        </div>
-      </div>
+      </label>
     </div>
 
-    <!-- Mobile menu-->
-    <div class="nav__mobile">
-      <nuxt-link to="/" class="logo">
-        <img class="logo__svg" src="@/assets/img/logo.svg" />
-        <span class="domov">Záhradné centrum</span>
-      </nuxt-link>
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <img class="navbar" src="@/assets/img/navbar.svg" />
-      </a>
+    <div class="nav-links">
+      <a href="//github.io/jo_geek" target="_blank">Github</a>
+      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
+      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
+      <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
+      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
     </div>
-    <!-- Navigation links-->
-    <div id="myLinks">
-      <nuxt-link class="a-mobile" to="/ponuka">Aktuálna ponuka</nuxt-link>
-      <nuxt-link class="a-mobile" to="/galeria/altanky">Galéria</nuxt-link>
-      <nuxt-link class="a-mobile" to="/vyroba">Výroba na mieru</nuxt-link>
-      <nuxt-link class="a-mobile" to="/kontakt">Kontakt</nuxt-link>
-    </div>
-  </nav>
+  </div>
 </template>
 
 <script>
 export default {
-  head: {
-    script: [{ src: "/nav.js", body: true }]
+  methods: {
+    toggle() {
+      document.querySelector(".hamburger").classList.toggle("isActive");
+    }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-a.logo.linkExactActiveClass.linkActiveClass {
-  color: green;
-  box-shadow: none;
-  background: none;
+@import "./assets/scss/hamburger.scss";
+* {
+  box-sizing: border-box;
 }
 
-a.nav-desktop__a.linkExactActiveClass.linkActiveClass {
-  color: green;
-  box-shadow: none;
-  background: none;
-}
-
-a.a-mobile.linkExactActiveClass.linkActiveClass {
-  color: green;
-  box-shadow: none;
-  background: none;
+body {
+  margin: 0px;
+  font-family: "segoe ui";
 }
 
 .nav {
-  position: fixed;
-  top: 0;
+  height: 50px;
   width: 100%;
-  z-index: 100;
-  transition: all 0.2;
-}
-
-.nav-desktop {
-  padding: 1rem;
-  font-family: $font-family3;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 0px 5px 2px rgb(0, 0, 0);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  &__items {
-    display: flex;
-    align-items: center;
-  }
-
-  &__a {
-    color: black;
-    padding: 0 2rem;
-    font-weight: 500;
-    font-size: 1.7rem;
-
-    &:hover {
-      color: green;
-    }
-  }
-
-  @media only screen and (max-width: $bg-md) {
-    display: none;
-  }
-}
-
-// MOBILE
-.nav__mobile {
-  overflow: hidden;
-  font-family: $font-family3;
-  background-color: rgb(255, 255, 255);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 0px 0px 8px 3px rgb(0, 0, 0);
-
-  @media only screen and (min-width: $bg-md) {
-    display: none;
-  }
-}
-
-#myLinks {
-  display: block;
-  font-family: $font-family3;
-  font-weight: 500;
-  box-shadow: 0 2px 2px 0 black;
-  opacity: 0;
-}
-
-.hidden {
-  opacity: 0;
-  margin-top: -330px;
-  z-index: -5;
-  transition-timing-function: linear, step-end, step-end;
-}
-
-.a-mobile {
+  background-color: #4d4d4d;
   position: relative;
-  padding: 1rem;
-  padding-left: 5rem;
-  color: black;
-  background-color: rgb(255, 255, 255);
-  font-size: 1.8rem;
-  text-align: left;
-  display: flex;
-  flex-direction: column;
-  z-index: 10;
+}
 
-  &:hover {
-    color: green;
+.nav > .nav-header {
+  display: inline;
+}
+
+.nav > .nav-header > .nav-title {
+  display: inline-block;
+  font-size: 22px;
+  color: #fff;
+  padding: 10px 10px 10px 10px;
+}
+
+.nav > .nav-btn {
+  display: none;
+}
+
+.nav > .nav-links {
+  display: inline;
+  float: right;
+  font-size: 18px;
+}
+
+.nav > .nav-links > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+}
+
+.nav > .nav-links > a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav > #nav-check {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
   }
-}
-
-.nav__mobile {
-  padding: 1rem;
-
-  &.icon {
-    padding: 0 2rem;
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
   }
-}
-
-.navbar {
-  margin-right: 1rem;
-  width: 2rem;
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-
-  &__svg {
-    width: 2.5rem;
-    transform: translateY(-0.3rem);
+  .nav > .nav-btn > label:hover,
+  .nav #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
   }
-}
-
-.domov {
-  margin-left: 1.5rem;
-  font-size: 1.7rem;
-  font-weight: 500;
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .nav > .nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .nav > .nav-links > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
 }
 </style>

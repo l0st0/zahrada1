@@ -22,6 +22,7 @@ export default {
           "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Montserrat:400,500,600|Poiret+One&display=swap"
       }
     ]
+
   },
   /*
    ** Customize the progress-bar color
@@ -81,5 +82,5 @@ export default {
   router: {
     linkActiveClass: "linkActiveClass",
     linkExactActiveClass: "linkExactActiveClass"
-  }
+  },
 };
