@@ -1,12 +1,13 @@
 <template>
-  <div class="nav">
+  <div class="main-nav">
     <input type="checkbox" id="nav-check" />
-    <div class="nav-header">
-      <div class="nav-title">JoGeek</div>
-    </div>
+    <nuxt-link linkExactActiveClass:active to="/" class="nav-title">
+      <img class="nav-title__svg" src="@/assets/img/logo.svg" alt />
+      <span>Záhradné centrum</span>
+    </nuxt-link>
     <div class="nav-btn">
       <label for="nav-check">
-        <div id="example" v-on:click="toggle" class="hamburger hamburger--slider" type="button">
+        <div v-on:click="toggle" class="hamburger hamburger--slider" type="button">
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -15,11 +16,10 @@
     </div>
 
     <div class="nav-links">
-      <a href="//github.io/jo_geek" target="_blank">Github</a>
-      <a href="http://stackoverflow.com/users/4084003/" target="_blank">Stackoverflow</a>
-      <a href="https://in.linkedin.com/in/jonesvinothjoseph" target="_blank">LinkedIn</a>
-      <a href="https://codepen.io/jo_Geek/" target="_blank">Codepen</a>
-      <a href="https://jsfiddle.net/user/jo_Geek/" target="_blank">JsFiddle</a>
+      <nuxt-link to="/galeria">Galéria</nuxt-link>
+      <nuxt-link to="/ponuka">Aktuálna ponuka</nuxt-link>
+      <nuxt-link to="/vyroba">Výroba na mieru</nuxt-link>
+      <nuxt-link to="/kontakt">Kontakt</nuxt-link>
     </div>
   </div>
 </template>
@@ -28,110 +28,106 @@
 export default {
   methods: {
     toggle() {
-      document.querySelector(".hamburger").classList.toggle("isActive");
+      document.querySelector(".hamburger").classList.toggle("is-active");
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
-@import "./assets/scss/hamburger.scss";
-* {
-  box-sizing: border-box;
+@import "./assets/scss/hamburger/hamburgers.scss";
+
+a.linkExactActiveClass.linkActiveClass {
+  color: green;
+  box-shadow: none;
+  background: none;
 }
 
-body {
-  margin: 0px;
-  font-family: "segoe ui";
-}
-
-.nav {
-  height: 50px;
+.main-nav {
   width: 100%;
-  background-color: #4d4d4d;
+  background-color: #ffffff;
   position: relative;
+  font-family: $font-family3;
+  font-weight: 500;
+  box-shadow: 0 0 5px 2px black;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.nav > .nav-header {
-  display: inline;
+.nav-title {
+  display: flex;
+  align-items: center;
+  font-size: 1.6rem;
+  color: black;
+  padding: 1rem;
+
+  &__svg {
+    width: 2rem;
+    margin-right: 1rem;
+    transform: translateY(-3px);
+  }
 }
 
-.nav > .nav-header > .nav-title {
-  display: inline-block;
-  font-size: 22px;
-  color: #fff;
-  padding: 10px 10px 10px 10px;
-}
-
-.nav > .nav-btn {
+.nav-btn {
   display: none;
 }
 
-.nav > .nav-links {
-  display: inline;
-  float: right;
-  font-size: 18px;
+.nav-links {
+  display: flex;
+  font-size: 1.7rem;
 }
 
-.nav > .nav-links > a {
-  display: inline-block;
-  padding: 13px 10px 13px 10px;
+.nav-links > a {
+  padding: 1rem 2rem;
   text-decoration: none;
-  color: #efefef;
+  color: #000000;
+
+  &:hover {
+    color: green;
+  }
 }
 
-.nav > .nav-links > a:hover {
-  background-color: rgba(0, 0, 0, 0.3);
-}
-
-.nav > #nav-check {
+#nav-check {
   display: none;
 }
 
-@media (max-width: 600px) {
-  .nav > .nav-btn {
+@media (max-width: $bg-md) {
+  .nav-btn {
     display: inline-block;
     position: absolute;
     right: 0px;
     top: 0px;
   }
-  .nav > .nav-btn > label {
-    display: inline-block;
-    width: 50px;
-    height: 50px;
-    padding: 13px;
-  }
-  .nav > .nav-btn > label:hover,
-  .nav #nav-check:checked ~ .nav-btn > label {
-    background-color: rgba(0, 0, 0, 0.3);
-  }
-  .nav > .nav-btn > label > span {
-    display: block;
-    width: 25px;
-    height: 10px;
-    border-top: 2px solid #eee;
-  }
-  .nav > .nav-links {
+
+  .nav-links {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #333;
+    background-color: rgb(255, 255, 255);
     height: 0px;
-    transition: all 0.3s ease-in;
+    transition: all 0.35s ease-out;
     overflow-y: hidden;
-    top: 50px;
-    left: 0px;
+    top: 4rem;
+    left: 0rem;
+    padding-left: 2rem;
+
+    :nth-child(1) {
+      padding-top: 2rem;
+    }
   }
-  .nav > .nav-links > a {
+  .nav-links > a {
     display: block;
     width: 100%;
   }
-  .nav > #nav-check:not(:checked) ~ .nav-links {
+  #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
-  .nav > #nav-check:checked ~ .nav-links {
-    height: calc(100vh - 50px);
-    overflow-y: auto;
+  #nav-check:checked ~ .nav-links {
+    box-shadow: 0 3px 3px black;
+    height: 18rem;
+    overflow-y: hidden;
   }
 }
 </style>
