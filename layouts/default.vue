@@ -27,11 +27,11 @@ export default {
 .nav {
   position: sticky;
   top: 0;
-  z-index: 10;
+  z-index: 2;
 }
 
 .main {
-  min-height: 100vh;
+  //min-height: calc(100vh - 4.7rem);
 }
 
 .footer {

@@ -16,8 +16,8 @@
     </div>
 
     <div class="nav-links">
-      <nuxt-link to="/galeria">Galéria</nuxt-link>
       <nuxt-link to="/ponuka">Aktuálna ponuka</nuxt-link>
+      <nuxt-link to="/galeria">Galéria</nuxt-link>
       <nuxt-link to="/vyroba">Výroba na mieru</nuxt-link>
       <nuxt-link to="/kontakt">Kontakt</nuxt-link>
     </div>
@@ -50,6 +50,7 @@ a.linkExactActiveClass.linkActiveClass {
   font-family: $font-family3;
   font-weight: 500;
   box-shadow: 0 0 5px 2px black;
+  z-index: 2;
 
   display: flex;
   justify-content: space-between;
@@ -59,14 +60,23 @@ a.linkExactActiveClass.linkActiveClass {
 .nav-title {
   display: flex;
   align-items: center;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   color: black;
   padding: 1rem;
+  padding-left: 3rem;
+
+  /* @media only screen and (min-width: $bg-lxx) {
+    padding-right: 5rem;
+  } */
+
+  &:hover {
+    color: green;
+  }
 
   &__svg {
-    width: 2rem;
-    margin-right: 1rem;
-    transform: translateY(-3px);
+    width: 3.2rem;
+    margin-right: 2rem;
+    transform: translateY(-4.5px);
   }
 }
 
@@ -77,12 +87,20 @@ a.linkExactActiveClass.linkActiveClass {
 .nav-links {
   display: flex;
   font-size: 1.7rem;
+
+  /* @media only screen and (min-width: $bg-lxx) {
+    padding-left: 5rem;
+  } */
 }
 
-.nav-links > a {
-  padding: 1rem 2rem;
+.nav-links a {
+  padding: 1rem 3rem;
   text-decoration: none;
   color: #000000;
+
+  @media only screen and (max-width: $bg-lg) {
+    padding: 1rem 1.8rem;
+  }
 
   &:hover {
     color: green;
@@ -109,9 +127,9 @@ a.linkExactActiveClass.linkActiveClass {
     height: 0px;
     transition: all 0.35s ease-out;
     overflow-y: hidden;
-    top: 4rem;
+    top: 6rem;
     left: 0rem;
-    padding-left: 2rem;
+    padding-left: 4.5rem;
 
     :nth-child(1) {
       padding-top: 2rem;

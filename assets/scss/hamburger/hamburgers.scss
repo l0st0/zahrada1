@@ -9,14 +9,14 @@
 
 // Settings
 // ==================================================
-$hamburger-padding-x: 1.3rem !default;
-$hamburger-padding-y: 1.3rem !default;
-$hamburger-layer-width: 26px !default;
-$hamburger-layer-height: 4px !default;
+$hamburger-padding-x: 2rem !default;
+$hamburger-padding-y: 2rem !default;
+$hamburger-layer-width: 30px !default;
+$hamburger-layer-height: 5px !default;
 $hamburger-layer-spacing: 4px !default;
-$hamburger-layer-color: #000 !default;
-$hamburger-layer-border-radius: 4px !default;
-$hamburger-hover-opacity: 0.8 !default;
+$hamburger-layer-color: rgb(70, 70, 70) !default;
+$hamburger-layer-border-radius: 10px !default;
+$hamburger-hover-opacity: 0.9 !default;
 $hamburger-active-layer-color: $hamburger-layer-color !default;
 $hamburger-active-hover-opacity: $hamburger-hover-opacity !default;
 
