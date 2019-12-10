@@ -15,11 +15,11 @@
       </label>
     </div>
 
-    <div class="nav-links">
-      <nuxt-link to="/ponuka">Aktuálna ponuka</nuxt-link>
-      <nuxt-link to="/galeria">Galéria</nuxt-link>
-      <nuxt-link to="/vyroba">Výroba na mieru</nuxt-link>
-      <nuxt-link to="/kontakt">Kontakt</nuxt-link>
+    <div v-on:click="close" class="nav-links">
+      <nuxt-link class="nav-links__item" to="/ponuka">Aktuálna ponuka</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/galeria">Galéria</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/vyroba">Výroba na mieru</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/kontakt">Kontakt</nuxt-link>
     </div>
   </div>
 </template>
@@ -29,6 +29,10 @@ export default {
   methods: {
     toggle() {
       document.querySelector(".hamburger").classList.toggle("is-active");
+    },
+    close() {
+      document.querySelector(".hamburger").classList.toggle("is-active");
+      document.querySelector("#nav-check").checked = false;
     }
   }
 };
@@ -74,9 +78,9 @@ a.linkExactActiveClass.linkActiveClass {
   }
 
   &__svg {
-    width: 3.2rem;
+    width: 2.8rem;
     margin-right: 2rem;
-    transform: translateY(-4.5px);
+    transform: translateY(-3.5px);
   }
 }
 
@@ -88,22 +92,18 @@ a.linkExactActiveClass.linkActiveClass {
   display: flex;
   font-size: 1.7rem;
 
-  /* @media only screen and (min-width: $bg-lxx) {
-    padding-left: 5rem;
-  } */
-}
+  &__item {
+    padding: 1rem 3rem;
+    text-decoration: none;
+    color: #000000;
 
-.nav-links a {
-  padding: 1rem 3rem;
-  text-decoration: none;
-  color: #000000;
+    @media only screen and (max-width: $bg-lg) {
+      padding: 1rem 1.8rem;
+    }
 
-  @media only screen and (max-width: $bg-lg) {
-    padding: 1rem 1.8rem;
-  }
-
-  &:hover {
-    color: green;
+    &:hover {
+      color: green;
+    }
   }
 }
 
@@ -125,20 +125,22 @@ a.linkExactActiveClass.linkActiveClass {
     width: 100%;
     background-color: rgb(255, 255, 255);
     height: 0px;
-    transition: all 0.35s ease-out;
     overflow-y: hidden;
     top: 6rem;
     left: 0rem;
-    padding-left: 4.5rem;
+    padding-left: 6rem;
+    transition: all 0.35s ease-out;
 
     :nth-child(1) {
       padding-top: 2rem;
     }
+
+    &__item {
+      display: block;
+      width: 100%;
+    }
   }
-  .nav-links > a {
-    display: block;
-    width: 100%;
-  }
+
   #nav-check:not(:checked) ~ .nav-links {
     height: 0px;
   }
