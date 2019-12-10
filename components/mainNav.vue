@@ -69,18 +69,18 @@ a.linkExactActiveClass.linkActiveClass {
   padding: 1rem;
   padding-left: 3rem;
 
-  /* @media only screen and (min-width: $bg-lxx) {
-    padding-right: 5rem;
-  } */
+  @media only screen and (max-width: $bg-lg) {
+    font-size: 1.6rem;
+  }
 
   &:hover {
     color: green;
   }
 
   &__svg {
-    width: 2.8rem;
-    margin-right: 2rem;
-    transform: translateY(-3.5px);
+    width: 2.5rem;
+    margin-right: 1.5rem;
+    transform: translateY(-4.5px);
   }
 }
 
@@ -90,12 +90,12 @@ a.linkExactActiveClass.linkActiveClass {
 
 .nav-links {
   display: flex;
-  font-size: 1.7rem;
+  font-size: 1.6rem;
 
   &__item {
     padding: 1rem 3rem;
     text-decoration: none;
-    color: #000000;
+    color: black;
 
     @media only screen and (max-width: $bg-lg) {
       padding: 1rem 1.8rem;
