@@ -7,7 +7,11 @@
     </nuxt-link>
     <div class="nav-btn">
       <label for="nav-check">
-        <div v-on:click="toggle" class="hamburger hamburger--slider" type="button">
+        <div
+          v-on:click="toggle"
+          class="hamburger hamburger--slider"
+          type="button"
+        >
           <div class="hamburger-box">
             <div class="hamburger-inner"></div>
           </div>
@@ -16,9 +20,15 @@
     </div>
 
     <div v-on:click="close" class="nav-links">
-      <nuxt-link class="nav-links__item" to="/ponuka">Aktuálna ponuka</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/galeria">Galéria</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/vyroba">Výroba na mieru</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/ponuka"
+        >Aktuálna ponuka</nuxt-link
+      >
+      <nuxt-link class="nav-links__item" to="/galeria/altanky"
+        >Galéria</nuxt-link
+      >
+      <nuxt-link class="nav-links__item" to="/vyroba"
+        >Výroba na mieru</nuxt-link
+      >
       <nuxt-link class="nav-links__item" to="/kontakt">Kontakt</nuxt-link>
     </div>
   </div>

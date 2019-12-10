@@ -22,7 +22,6 @@ export default {
           "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Montserrat:400,500,600|Poiret+One&display=swap"
       }
     ]
-
   },
   /*
    ** Customize the progress-bar color
@@ -35,7 +34,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ["~/plugins/vue-lazysizes.client.js"],
+  plugins: [
+    "~/plugins/vue-lazysizes.client.js",
+    { src: "~/plugins/gallery.js", ssr: false }
+  ],
   /*
    ** Nuxt.js dev-modules
    */
@@ -72,6 +74,7 @@ export default {
    ** Build configuration
    */
   build: {
+    transpile: ["gallery"],
     extend(config, { isDev, isClient, loaders: { vue } }) {
       if (isClient) {
         vue.transformAssetUrls.img = ["data-src", "src"];
@@ -82,5 +85,5 @@ export default {
   router: {
     linkActiveClass: "linkActiveClass",
     linkExactActiveClass: "linkExactActiveClass"
-  },
+  }
 };
