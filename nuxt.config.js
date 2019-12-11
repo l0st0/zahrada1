@@ -36,7 +36,7 @@ export default {
    */
   plugins: [
     "~/plugins/vue-lazysizes.client.js",
-    { src: "~/plugins/gallery.js", ssr: false }
+
   ],
   /*
    ** Nuxt.js dev-modules
@@ -74,7 +74,7 @@ export default {
    ** Build configuration
    */
   build: {
-    transpile: ["gallery"],
+
     extend(config, { isDev, isClient, loaders: { vue } }) {
       if (isClient) {
         vue.transformAssetUrls.img = ["data-src", "src"];
