@@ -47,17 +47,6 @@
 
 <script>
 export default {
-  head: {
-    title: "Galéria | Záhradné centrum",
-    meta: [
-      {
-        hid: "description",
-        name: "description",
-        content: "zahradne centrum huncovce galeria"
-      }
-    ]
-  },
-
   methods: {
     sideNav() {
       const sideNavItems = document.querySelector(".side-nav__mobile-items");

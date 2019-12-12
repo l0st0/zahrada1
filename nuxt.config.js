@@ -1,10 +1,14 @@
+import { skyblue } from "color-name";
+
 export default {
+  loading: "~/components/loading.vue",
   mode: "universal",
   /*
    ** Headers of the page
    */
   head: {
     title: process.env.npm_package_name || "",
+    lang: "sk",
     meta: [
       { charset: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
