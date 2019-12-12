@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header header="Altánky" />
+    <Header header="Detské ihriská" />
     <v-gallery :images="list">
       <a class="lightBoxGallery__a" v-for="img in list" :data-image="img.url" v-bind:key="img.id">
         <div class="image-container">
@@ -19,12 +19,12 @@ export default {
   },
 
   head: {
-    title: "Altánky | Záhradné centrum",
+    title: "Detské ihriská | Záhradné centrum",
     meta: [
       {
         hid: "description",
         name: "description",
-        content: "Drevené altánky "
+        content: "Detské ihriská na záhradu alebo do parku."
       }
     ]
   },

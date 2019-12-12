@@ -13,6 +13,9 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   scroll-behavior: smooth;
+  max-width: 1920px;
+  margin: 0 auto;
+  background-color: rgb(231, 231, 231);
 
   font-size: 62.5%;
 
@@ -43,9 +46,9 @@ a {
   background: linear-gradient(
       to bottom,
       rgba(rgb(255, 255, 255), 0.9),
-      rgba(rgb(255, 255, 255), 0.9)
+      rgba(rgb(255, 255, 255), 0.5)
     ),
-    url(../img/bg10.jpg);
+    url(../img/bgw1-s.jpg);
 
   background-repeat: no-repeat;
   //background-size: cover;

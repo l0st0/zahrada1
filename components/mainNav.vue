@@ -73,6 +73,10 @@ a.linkExactActiveClass.linkActiveClass {
     font-size: 1.6rem;
   }
 
+  @media only screen and (max-width: $bg-md) {
+    font-size: 1.8rem;
+  }
+
   &:hover {
     color: green;
   }
@@ -126,10 +130,11 @@ a.linkExactActiveClass.linkActiveClass {
     background-color: rgb(255, 255, 255);
     height: 0px;
     overflow-y: hidden;
-    top: 6rem;
+    top: 5.5rem;
     left: 0rem;
     padding-left: 5rem;
     transition: all 0.35s ease-out;
+    font-size: 1.9rem;
 
     :nth-child(1) {
       padding-top: 2rem;
@@ -146,7 +151,7 @@ a.linkExactActiveClass.linkActiveClass {
   }
   #nav-check:checked ~ .nav-links {
     box-shadow: 0 3px 3px black;
-    height: 18rem;
+    height: 20rem;
     overflow-y: hidden;
   }
 }

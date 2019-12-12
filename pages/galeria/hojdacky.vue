@@ -1,6 +1,6 @@
 <template>
   <div>
-    <Header header="Altánky" />
+    <Header header="Hojdačky" />
     <v-gallery :images="list">
       <a class="lightBoxGallery__a" v-for="img in list" :data-image="img.url" v-bind:key="img.id">
         <div class="image-container">
@@ -19,12 +19,12 @@ export default {
   },
 
   head: {
-    title: "Altánky | Záhradné centrum",
+    title: "Hojdačky | Záhradné centrum",
     meta: [
       {
         hid: "description",
         name: "description",
-        content: "Drevené altánky"
+        content: "Hojdačky ako doplnok do Vašej záhrady."
       }
     ]
   },
@@ -207,38 +207,3 @@ export default {
   }
 };
 </script>
-
-<style lang="scss">
-.lightBoxGallery {
-  display: flex !important;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-bottom: 3rem;
-  max-width: 150rem;
-  margin: 0 auto;
-
-  &__a {
-    border: none !important;
-    padding: 0 !important;
-    margin: 1rem !important;
-  }
-
-  .image-container {
-    height: auto !important;
-
-    img {
-      cursor: pointer;
-      width: 16rem !important;
-      height: 15rem !important;
-      box-shadow: 0 0 6px 2px black;
-
-      &:hover {
-        transition: all 0.3s;
-        box-shadow: 0 0 6px 2px black !important;
-        transform: scale(1.05);
-      }
-    }
-  }
-}
-</style>
