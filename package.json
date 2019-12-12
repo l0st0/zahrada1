@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "nuxt": "^2.0.0",
-    "vue-easy-lightbox": "^0.8.1"
+    "v-gallery": "^1.2.4"
   },
   "devDependencies": {
     "@bazzite/nuxt-optimized-images": "^0.2.1",

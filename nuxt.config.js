@@ -35,8 +35,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    "~/plugins/vue-lazysizes.client.js",
-
+    { src: "~/plugins/vue-lazysizes.client.js" },
+    { src: "~/plugins/gallery.js", ssr: false }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -74,7 +74,6 @@ export default {
    ** Build configuration
    */
   build: {
-
     extend(config, { isDev, isClient, loaders: { vue } }) {
       if (isClient) {
         vue.transformAssetUrls.img = ["data-src", "src"];
