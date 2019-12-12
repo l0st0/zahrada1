@@ -128,7 +128,7 @@ a.linkExactActiveClass.linkActiveClass {
     overflow-y: hidden;
     top: 6rem;
     left: 0rem;
-    padding-left: 6rem;
+    padding-left: 5rem;
     transition: all 0.35s ease-out;
 
     :nth-child(1) {

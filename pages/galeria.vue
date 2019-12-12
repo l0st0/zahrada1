@@ -15,4 +15,15 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.page-enter-active {
+  transition: all 2s ease-in;
+}
+.page-leave-active {
+  transition: all 1s ease-out;
+}
+.page-enter, .page-leave-to
+/* .slide-fade-leave-active below version 2.1.8 */ {
+  transform: translateX(20px);
+  opacity: 0;
+}
 </style>

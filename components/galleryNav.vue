@@ -20,12 +20,16 @@
 
     <div class="side-nav__mobile">
       <a class="icon1" v-on:click="sideNav">
-        <i class="fa fa-bars"></i>
+        <div v-on:click="toggle" class="hamburger hamburger--slider hamburger2" type="button">
+          <div class="hamburger-box">
+            <div class="hamburger-inner"></div>
+          </div>
+        </div>
       </a>
       <div class="side-nav__mobile-text">Galéria</div>
     </div>
 
-    <div class="side-nav__mobile-items">
+    <div v-on:click="close" class="side-nav__mobile-items">
       <nuxt-link to="/galeria/altanky" class="side-nav__item side-nav__item-0">Altánky</nuxt-link>
       <nuxt-link to="/galeria/ihriska" class="side-nav__item side-nav__item-6">Detské ihriská</nuxt-link>
       <nuxt-link to="/galeria/doplnky" class="side-nav__item side-nav__item-12">Doplnky</nuxt-link>
@@ -56,12 +60,27 @@ export default {
       } else {
         sideNavItems.style.display = "flex";
       }
+    },
+    toggle() {
+      document.querySelector(".hamburger2").classList.toggle("is-active");
+    },
+    close() {
+      document.querySelector(".hamburger2").classList.toggle("is-active");
+      const sideNavItems = document.querySelector(".side-nav__mobile-items");
+
+      if (sideNavItems.style.display === "flex") {
+        sideNavItems.style.display = "none";
+      } else {
+        sideNavItems.style.display = "flex";
+      }
     }
   }
 };
 </script>
 
 <style lang="scss" scoped>
+@import "./assets/scss/hamburger/hamburgers.scss";
+
 .side-nav {
   display: flex;
   justify-content: center;
@@ -136,57 +155,10 @@ export default {
   background-position: center;
 }
 
-.gallery-input {
-  max-width: 150rem;
-  margin: 0 auto;
-  margin-bottom: 3rem;
-}
-
-.gallery-grid {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-
-  &__item {
-    padding: 0.7rem;
-  }
-
-  &__text {
-    font-size: 1.5rem;
-    text-align: center;
-    font-family: $font-family3;
-    font-weight: 400;
-    padding-bottom: 0.6rem;
-    padding-top: 1rem;
-    z-index: 2;
-  }
-
-  &__img {
-    width: 17rem;
-    height: 17rem;
-    cursor: pointer;
-    box-shadow: 0 0 10px 5px rgb(0, 0, 0);
-    transition: all 0.2s;
-    border: 2px solid white;
-
-    &:hover {
-      transform: scale(1.05);
-    }
-
-    @media only screen and (max-width: $bg-sx) {
-      width: 13rem;
-      height: 13rem;
-    }
-  }
-}
-
 //Mobile
 
 .side-nav__mobile {
-  padding-top: 6rem;
-
+  //padding-top: 6rem;
   display: flex;
   align-items: center;
 
@@ -195,6 +167,7 @@ export default {
   }
 
   &-text {
+    margin-right: 1rem;
     font-size: 2rem;
     font-family: $font-family2;
     font-weight: 600;
@@ -212,8 +185,8 @@ export default {
 }
 
 .icon1 {
-  padding: 1rem;
-  padding-left: 1.8rem;
+  padding: 0.5rem;
+  padding-left: 1.5rem;
   font-size: 3rem;
   color: black;
 

@@ -1,7 +1,6 @@
 import { skyblue } from "color-name";
 
 export default {
-  loading: "~/components/loading.vue",
   mode: "universal",
   /*
    ** Headers of the page
@@ -53,7 +52,7 @@ export default {
 
   styleResources: {
     // your settings here
-    scss: ["@/assets/scss/_variables.scss"]
+    scss: ["@/assets/scss/_variables.scss", "@/assets/scss/galeria.scss"]
   },
 
   optimizedImages: {
