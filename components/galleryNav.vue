@@ -11,7 +11,7 @@
       <nuxt-link to="/galeria/kvetinace" class="side-nav__item side-nav__item-11">Kvetináče</nuxt-link>
       <nuxt-link to="/galeria/lavicky" class="side-nav__item side-nav__item-8">Lavičky</nuxt-link>
       <nuxt-link to="/galeria/ploty" class="side-nav__item side-nav__item-5">Ploty</nuxt-link>
-      <nuxt-link to="/galeria/" class="side-nav__item side-nav__item-1">Prístrešky</nuxt-link>
+      <nuxt-link to="/galeria/pristresky" class="side-nav__item side-nav__item-1">Prístrešky</nuxt-link>
       <nuxt-link to="/galeria/sedenia" class="side-nav__item side-nav__item-7">Sedenia</nuxt-link>
       <nuxt-link to="/galeria/studne" class="side-nav__item side-nav__item-10">Studne</nuxt-link>
       <nuxt-link to="/galeria/sviecky" class="side-nav__item side-nav__item-13">Sviečky</nuxt-link>
@@ -40,7 +40,7 @@
       <nuxt-link to="/galeria/kvetinace" class="side-nav__item side-nav__item-11">Kvetináče</nuxt-link>
       <nuxt-link to="/galeria/lavicky" class="side-nav__item side-nav__item-8">Lavičky</nuxt-link>
       <nuxt-link to="/galeria/ploty" class="side-nav__item side-nav__item-5">Ploty</nuxt-link>
-      <nuxt-link to="/galeria/" class="side-nav__item side-nav__item-1">Prístrešky</nuxt-link>
+      <nuxt-link to="/galeria/pristresky" class="side-nav__item side-nav__item-1">Prístrešky</nuxt-link>
       <nuxt-link to="/galeria/sedenia" class="side-nav__item side-nav__item-7">Sedenia</nuxt-link>
       <nuxt-link to="/galeria/studne" class="side-nav__item side-nav__item-10">Studne</nuxt-link>
       <nuxt-link to="/galeria/sviecky" class="side-nav__item side-nav__item-13">Sviečky</nuxt-link>
