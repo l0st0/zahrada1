@@ -113,7 +113,6 @@ textarea {
   width: 100%;
   padding: 1rem;
   border: 2px solid rgb(163, 163, 163);
-  resize: vertical;
   border-radius: 5px;
   font-size: 1.3rem;
   font-family: $font-family3;
@@ -121,7 +120,7 @@ textarea {
 }
 
 input[type="submit"] {
-  background-color: $logo-color;
+  background-color: $main-color;
   color: black;
   padding: 0.8rem 1.6rem;
   border: none;

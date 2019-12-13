@@ -3,9 +3,7 @@
     <nav class="nav">
       <MainNav />
     </nav>
-    <main class="main">
-      <nuxt />
-    </main>
+    <nuxt />
     <footer class="footer">
       <Footer />
     </footer>

@@ -42,16 +42,16 @@ a {
 }
 
 .container-small {
+  overflow-x: hidden;
   min-height: calc(100vh - 4.7rem);
   background: linear-gradient(
       to bottom,
-      rgba(rgb(255, 255, 255), 0.9),
-      rgba(rgb(255, 255, 255), 0.5)
+      rgba(rgb(255, 255, 255), 0.8),
+      rgba(rgb(255, 255, 255), 0.8)
     ),
-    url(../img/bgw1-s.jpg);
+    url(../img/bga1.png);
 
-  background-repeat: no-repeat;
-  //background-size: cover;
+  background-repeat: repeat;
   //background-position: left;
 
   @media only screen and (max-width: $bg-lg) {
