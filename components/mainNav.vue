@@ -20,6 +20,7 @@
       <nuxt-link class="nav-links__item" to="/galeria/altanky/">Galéria</nuxt-link>
       <nuxt-link class="nav-links__item" to="/vyroba/">Výroba na mieru</nuxt-link>
       <nuxt-link class="nav-links__item" to="/kontakt/">Kontakt</nuxt-link>
+      <img class="nav-links__svg" src="@/assets/img/svg/christmas.svg" alt />
     </div>
   </div>
 </template>
@@ -117,6 +118,9 @@ a.linkExactActiveClass.linkActiveClass {
       color: green;
     }
   }
+  &__svg {
+    display: none;
+  }
 }
 
 #nav-check {
@@ -151,6 +155,20 @@ a.linkExactActiveClass.linkActiveClass {
     &__item {
       display: block;
       width: 100%;
+    }
+
+    &__svg {
+      display: block;
+      position: absolute;
+      width: 8rem;
+      top: 11rem;
+      right: 4rem;
+
+      @media only screen and (max-width: $bg-sm) {
+        width: 6rem;
+        right: 1rem;
+        top: 13rem;
+      }
     }
   }
 

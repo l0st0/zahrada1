@@ -1,21 +1,21 @@
 <template>
   <div class="div">
     <div class="side-nav">
-      <nuxt-link to="/galeria/altanky" class="side-nav__item side-nav__item-0">Altánky</nuxt-link>
-      <nuxt-link to="/galeria/ihriska" class="side-nav__item side-nav__item-6">Detské ihriská</nuxt-link>
-      <nuxt-link to="/galeria/doplnky" class="side-nav__item side-nav__item-12">Doplnky</nuxt-link>
-      <nuxt-link to="/galeria/garaze" class="side-nav__item side-nav__item-2">Garáže</nuxt-link>
-      <nuxt-link to="/galeria/hojdacky" class="side-nav__item side-nav__item-9">Hojdačky</nuxt-link>
-      <nuxt-link to="/galeria/chatky" class="side-nav__item side-nav__item-4">Chatky a sklady</nuxt-link>
-      <nuxt-link to="/galeria/kamen" class="side-nav__item side-nav__item-14">Kameň</nuxt-link>
-      <nuxt-link to="/galeria/kvetinace" class="side-nav__item side-nav__item-11">Kvetináče</nuxt-link>
-      <nuxt-link to="/galeria/lavicky" class="side-nav__item side-nav__item-8">Lavičky</nuxt-link>
-      <nuxt-link to="/galeria/ploty" class="side-nav__item side-nav__item-5">Ploty</nuxt-link>
-      <nuxt-link to="/galeria/pristresky" class="side-nav__item side-nav__item-1">Prístrešky</nuxt-link>
-      <nuxt-link to="/galeria/sedenia" class="side-nav__item side-nav__item-7">Sedenia</nuxt-link>
-      <nuxt-link to="/galeria/studne" class="side-nav__item side-nav__item-10">Studne</nuxt-link>
-      <nuxt-link to="/galeria/sviecky" class="side-nav__item side-nav__item-13">Sviečky</nuxt-link>
-      <nuxt-link to="/galeria/zahrady" class="side-nav__item side-nav__item-3">Zimné záhrady</nuxt-link>
+      <nuxt-link to="/galeria/altanky" class="side-nav__item">Altánky</nuxt-link>
+      <nuxt-link to="/galeria/ihriska" class="side-nav__item">Detské ihriská</nuxt-link>
+      <nuxt-link to="/galeria/doplnky" class="side-nav__item">Doplnky</nuxt-link>
+      <nuxt-link to="/galeria/garaze" class="side-nav__item">Garáže</nuxt-link>
+      <nuxt-link to="/galeria/hojdacky" class="side-nav__item">Hojdačky</nuxt-link>
+      <nuxt-link to="/galeria/chatky" class="side-nav__item">Chatky a sklady</nuxt-link>
+      <nuxt-link to="/galeria/kamen" class="side-nav__item">Kameň</nuxt-link>
+      <nuxt-link to="/galeria/kvetinace" class="side-nav__item">Kvetináče</nuxt-link>
+      <nuxt-link to="/galeria/lavicky" class="side-nav__item">Lavičky</nuxt-link>
+      <nuxt-link to="/galeria/ploty" class="side-nav__item">Ploty</nuxt-link>
+      <nuxt-link to="/galeria/pristresky" class="side-nav__item">Prístrešky</nuxt-link>
+      <nuxt-link to="/galeria/sedenia" class="side-nav__item">Sedenia</nuxt-link>
+      <nuxt-link to="/galeria/studne" class="side-nav__item">Studne</nuxt-link>
+      <nuxt-link to="/galeria/sviecky" class="side-nav__item">Sviečky</nuxt-link>
+      <nuxt-link to="/galeria/zahrady" class="side-nav__item">Zimné záhrady</nuxt-link>
     </div>
 
     <div class="side-nav__mobile">
@@ -30,21 +30,21 @@
     </div>
 
     <div v-on:click="close" class="side-nav__mobile-items">
-      <nuxt-link to="/galeria/altanky" class="side-nav__item side-nav__item-0">Altánky</nuxt-link>
-      <nuxt-link to="/galeria/ihriska" class="side-nav__item side-nav__item-6">Detské ihriská</nuxt-link>
-      <nuxt-link to="/galeria/doplnky" class="side-nav__item side-nav__item-12">Doplnky</nuxt-link>
-      <nuxt-link to="/galeria/garaze" class="side-nav__item side-nav__item-2">Garáže</nuxt-link>
-      <nuxt-link to="/galeria/hojdacky" class="side-nav__item side-nav__item-9">Hojdačky</nuxt-link>
-      <nuxt-link to="/galeria/chatky" class="side-nav__item side-nav__item-4">Chatky a sklady</nuxt-link>
-      <nuxt-link to="/galeria/kamen" class="side-nav__item side-nav__item-14">Kameň</nuxt-link>
-      <nuxt-link to="/galeria/kvetinace" class="side-nav__item side-nav__item-11">Kvetináče</nuxt-link>
-      <nuxt-link to="/galeria/lavicky" class="side-nav__item side-nav__item-8">Lavičky</nuxt-link>
-      <nuxt-link to="/galeria/ploty" class="side-nav__item side-nav__item-5">Ploty</nuxt-link>
-      <nuxt-link to="/galeria/pristresky" class="side-nav__item side-nav__item-1">Prístrešky</nuxt-link>
-      <nuxt-link to="/galeria/sedenia" class="side-nav__item side-nav__item-7">Sedenia</nuxt-link>
-      <nuxt-link to="/galeria/studne" class="side-nav__item side-nav__item-10">Studne</nuxt-link>
-      <nuxt-link to="/galeria/sviecky" class="side-nav__item side-nav__item-13">Sviečky</nuxt-link>
-      <nuxt-link to="/galeria/zahrady" class="side-nav__item side-nav__item-3">Zimné záhrady</nuxt-link>
+      <nuxt-link to="/galeria/altanky" class="side-nav__item">Altánky</nuxt-link>
+      <nuxt-link to="/galeria/ihriska" class="side-nav__item">Detské ihriská</nuxt-link>
+      <nuxt-link to="/galeria/doplnky" class="side-nav__item">Doplnky</nuxt-link>
+      <nuxt-link to="/galeria/garaze" class="side-nav__item">Garáže</nuxt-link>
+      <nuxt-link to="/galeria/hojdacky" class="side-nav__item">Hojdačky</nuxt-link>
+      <nuxt-link to="/galeria/chatky" class="side-nav__item">Chatky a sklady</nuxt-link>
+      <nuxt-link to="/galeria/kamen" class="side-nav__item">Kameň</nuxt-link>
+      <nuxt-link to="/galeria/kvetinace" class="side-nav__item">Kvetináče</nuxt-link>
+      <nuxt-link to="/galeria/lavicky" class="side-nav__item">Lavičky</nuxt-link>
+      <nuxt-link to="/galeria/ploty" class="side-nav__item">Ploty</nuxt-link>
+      <nuxt-link to="/galeria/pristresky" class="side-nav__item">Prístrešky</nuxt-link>
+      <nuxt-link to="/galeria/sedenia" class="side-nav__item">Sedenia</nuxt-link>
+      <nuxt-link to="/galeria/studne" class="side-nav__item">Studne</nuxt-link>
+      <nuxt-link to="/galeria/sviecky" class="side-nav__item">Sviečky</nuxt-link>
+      <nuxt-link to="/galeria/zahrady" class="side-nav__item">Zimné záhrady</nuxt-link>
     </div>
   </div>
 </template>
@@ -105,34 +105,29 @@ export default {
     color: white;
     box-shadow: 0px 0px 2px 1px black;
     min-width: 18rem;
-    transition: 0.5s ease;
+    //transition: 0.5s ease;
 
     background: linear-gradient(
         to bottom,
-        rgba(rgb(0, 0, 0), 0.95),
+        rgba(rgb(0, 0, 0), 1),
         rgba(rgb(0, 0, 0), 0.7)
       ),
-      url(~assets/img/bg_sm.jpg);
+      url(~assets/img/nav.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
 
-    /* @media only screen and (max-width: $bg-sm) {
-      padding: 1.5rem;
-      margin: 0.5rem;
-      min-width: 21rem;
-    } */
-
     &:hover {
-      box-shadow: 0px 0px 4px 3px black;
+      box-shadow: 0px 0px 7px 4px black;
+      color: black;
 
       background: linear-gradient(
           to bottom,
-          rgba(rgb(0, 0, 0), 0),
-          rgba(rgb(0, 0, 0), 0)
+          rgba(rgb(255, 255, 255), 1),
+          rgba(rgb(255, 255, 255), 0.4)
         ),
-        url(~assets/img/bg_sm.jpg);
+        url(~assets/img/nav.jpg);
 
       background-repeat: no-repeat;
       background-size: cover;
@@ -142,13 +137,14 @@ export default {
 }
 
 .linkExactActiveClass {
-  box-shadow: 0px 0px 4px 3px black;
+  box-shadow: 0px 0px 7px 4px black;
+  color: black;
   background: linear-gradient(
       to bottom,
-      rgba(rgb(0, 0, 0), 0),
-      rgba(rgb(0, 0, 0), 0)
+      rgba(rgb(255, 255, 255), 1),
+      rgba(rgb(255, 255, 255), 0.4)
     ),
-    url(~assets/img/bg_sm.jpg);
+    url(~assets/img/nav.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
