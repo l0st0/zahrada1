@@ -47,7 +47,7 @@
 
               <textarea id="subject" name="Správa" placeholder="Správa"></textarea>
               <div class="header-right__bottom">
-                <input v-on:click="greet" type="submit" value="Odoslať" />
+                <input type="submit" value="Odoslať" />
                 <div class="header-right__text">Kontaktujte nás!</div>
               </div>
             </form>
