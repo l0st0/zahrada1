@@ -1,4 +1,6 @@
-import { skyblue } from "color-name";
+import {
+  skyblue
+} from "color-name";
 
 export default {
   mode: "universal",
@@ -8,28 +10,36 @@ export default {
   head: {
     title: process.env.npm_package_name || "",
     lang: "sk",
-    meta: [
-      { charset: "utf-8" },
-      { name: "viewport", content: "width=device-width, initial-scale=1" },
+    meta: [{
+        charset: "utf-8"
+      },
+      {
+        name: "viewport",
+        content: "width=device-width, initial-scale=1"
+      },
       {
         hid: "description",
         name: "description",
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [
-      { rel: "icon", type: "image/x-icon", href: "/favicon.ico" },
+    link: [{
+        rel: "icon",
+        type: "image/x-icon",
+        href: "/favicon.ico"
+      },
       {
         rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Montserrat:400,500,600|Poiret+One&display=swap"
+        href: "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Lato:300,400|Montserrat:400,500,600|Poiret+One&display=swap"
       }
     ]
   },
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: {
+    color: "#fff"
+  },
   /*
    ** Global CSS
    */
@@ -37,9 +47,13 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [
-    { src: "~/plugins/vue-lazysizes.client.js" },
-    { src: "~/plugins/gallery.js", ssr: false }
+  plugins: [{
+      src: "~/plugins/vue-lazysizes.client.js"
+    },
+    {
+      src: "~/plugins/gallery.js",
+      ssr: false
+    }
   ],
   /*
    ** Nuxt.js dev-modules
@@ -77,7 +91,13 @@ export default {
    ** Build configuration
    */
   build: {
-    extend(config, { isDev, isClient, loaders: { vue } }) {
+    extend(config, {
+      isDev,
+      isClient,
+      loaders: {
+        vue
+      }
+    }) {
       if (isClient) {
         vue.transformAssetUrls.img = ["data-src", "src"];
         vue.transformAssetUrls.source = ["data-srcset", "srcset"];

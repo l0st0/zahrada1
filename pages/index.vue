@@ -3,8 +3,8 @@
     <header class="header">
       <div class="header-top">
         <div class="header-text">
-          <h2 class="header-text__1">Záhradné centrum</h2>
-          <h1 class="header-text__2">Huncovce</h1>
+          <div class="header-text__1">Záhradné centrum</div>
+          <div class="header-text__2">Huncovce</div>
         </div>
 
         <div class="objednavky">
@@ -173,32 +173,45 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  font-size: 4.8rem;
   color: white;
-  font-family: $font-family1;
-
-  @media only screen and (max-width: $bg-lg) {
-    font-size: 3.8rem;
-  }
-
-  @media only screen and (max-width: $bg-md) {
-    font-size: 3rem;
-  }
+  font-family: $font-family4;
+  font-weight: 300;
 
   @media only screen and (max-width: $bg-sm) {
-    font-size: 2.5rem;
     flex-direction: column;
   }
 
-  @media only screen and (max-width: $bg-sx) {
-    font-size: 2rem;
-  }
-
   &__1 {
+    font-size: 6rem;
     padding-right: 1.5rem;
 
+    @media only screen and (max-width: $bg-md) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: $bg-sm) {
+      font-size: 4rem;
+    }
+
     @media only screen and (max-width: $bg-sx) {
+      font-size: 3rem;
       padding-right: 0rem;
+    }
+  }
+
+  &__2 {
+    font-size: 7rem;
+
+    @media only screen and (max-width: $bg-md) {
+      font-size: 6rem;
+    }
+
+    @media only screen and (max-width: $bg-sm) {
+      font-size: 5rem;
+    }
+
+    @media only screen and (max-width: $bg-sx) {
+      font-size: 4rem;
     }
   }
 }
@@ -221,6 +234,10 @@ export default {
 
   &__svg {
     height: 4rem;
+
+    @media only screen and (max-width: $bg-sm) {
+      height: 3.5rem;
+    }
   }
 }
 
@@ -272,7 +289,6 @@ export default {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 1rem;
   padding-left: 5rem;
 
   @media only screen and (max-width: $bg-md) {

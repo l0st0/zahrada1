@@ -99,7 +99,7 @@ export default {
     padding: 1.2rem;
     margin: 0.6rem;
     font-size: 1.5rem;
-    font-family: $font-family2;
+    font-family: $font-family3;
     font-weight: 800;
     letter-spacing: 1.3px;
     color: white;
@@ -167,10 +167,10 @@ export default {
   }
 
   &-text {
-    margin-right: 1rem;
     font-size: 2rem;
     font-family: $font-family2;
     font-weight: 600;
+    transform: translateY(0.2rem);
   }
 
   &-items {
@@ -185,8 +185,7 @@ export default {
 }
 
 .icon1 {
-  padding: 0.5rem;
-  padding-left: 1.5rem;
+  padding-left: 1.2rem;
   font-size: 3rem;
   color: black;
 
