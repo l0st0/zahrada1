@@ -261,9 +261,13 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.heading-2 {
+  padding: 5rem 1rem 2rem 1rem;
+}
+
 .ponuka-head {
   font-size: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   font-family: $font-family3;
   line-height: 1.5;
   margin: auto;

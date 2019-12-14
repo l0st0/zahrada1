@@ -2,8 +2,8 @@
   <div class="main-nav">
     <input type="checkbox" id="nav-check" />
     <nuxt-link linkExactActiveClass:active to="/" class="nav-title">
-      <img class="nav-title__svg" src="@/assets/img/logo.svg" alt />
-      <span>Záhradné centrum</span>
+      <img v-on:click="fix" class="nav-title__svg" src="@/assets/img/logo.svg" alt />
+      <span v-on:click="fix">Záhradné centrum</span>
     </nuxt-link>
     <div class="nav-btn">
       <label for="nav-check">
@@ -31,8 +31,16 @@ export default {
       document.querySelector(".hamburger").classList.toggle("is-active");
     },
     close() {
-      document.querySelector(".hamburger").classList.toggle("is-active");
-      document.querySelector("#nav-check").checked = false;
+      if (document.querySelector("#nav-check").checked === true) {
+        document.querySelector(".hamburger").classList.toggle("is-active");
+        document.querySelector("#nav-check").checked = false;
+      }
+    },
+    fix() {
+      if (document.querySelector("#nav-check").checked === true) {
+        document.querySelector(".hamburger").classList.toggle("is-active");
+        document.querySelector("#nav-check").checked = false;
+      }
     }
   }
 };

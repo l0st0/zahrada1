@@ -186,13 +186,18 @@ export default {
   }
 
   @media only screen and (max-width: $bg-sm) {
+    font-size: 2.5rem;
     flex-direction: column;
+  }
+
+  @media only screen and (max-width: $bg-sx) {
+    font-size: 2rem;
   }
 
   &__1 {
     padding-right: 1.5rem;
 
-    @media only screen and (max-width: $bg-sm) {
+    @media only screen and (max-width: $bg-sx) {
       padding-right: 0rem;
     }
   }
@@ -224,6 +229,10 @@ export default {
   margin: 0 auto;
   padding: 2rem;
   margin-top: 3rem;
+
+  @media only screen and (max-width: $bg-md) {
+    margin-top: 0;
+  }
 }
 
 .header-svg {
@@ -272,7 +281,7 @@ export default {
 
   &__formular {
     //order: 1;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0 auto;
   }
 
@@ -330,6 +339,10 @@ input[type="submit"] {
 
   @media only screen and (max-width: $bg-md) {
     margin-top: 2rem;
+  }
+
+  @media only screen and (max-width: $bg-sxx) {
+    display: none;
   }
 
   &__svg {
