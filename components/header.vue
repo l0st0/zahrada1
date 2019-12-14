@@ -10,7 +10,7 @@ export default {
 
 <style lang="scss" scoped>
 .heading-2 {
-  padding: 4rem 1rem 4rem 1rem;
+  padding: 4rem 2rem 4rem 2rem;
   font-size: 4.5rem;
   font-family: "Montserrat", sans-serif;
   text-align: center;

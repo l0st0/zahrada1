@@ -16,9 +16,9 @@
     </div>
 
     <div v-on:click="close" class="nav-links">
-      <nuxt-link class="nav-links__item" to="/ponuka/">Aktuálna ponuka</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/galeria/altanky/">Galéria</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/vyroba/">Výroba na mieru</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/ponuka">Aktuálna ponuka</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/galeria/altanky">Galéria</nuxt-link>
+      <nuxt-link class="nav-links__item" to="/vyroba">Výroba na mieru</nuxt-link>
       <nuxt-link class="nav-links__item" to="/kontakt/">Kontakt</nuxt-link>
       <img class="nav-links__svg" src="@/assets/img/svg/christmas.svg" alt />
     </div>
@@ -73,27 +73,19 @@ a.linkExactActiveClass.linkActiveClass {
 .nav-title {
   display: flex;
   align-items: center;
-  font-size: 1.7rem;
+  font-size: 1.8rem;
   color: black;
   padding: 1rem;
   padding-left: 3rem;
-
-  @media only screen and (max-width: $bg-lg) {
-    font-size: 1.6rem;
-  }
-
-  @media only screen and (max-width: $bg-md) {
-    font-size: 1.8rem;
-  }
 
   &:hover {
     color: green;
   }
 
   &__svg {
-    width: 2.5rem;
+    width: 2.6rem;
     margin-right: 1.5rem;
-    transform: translateY(-4.5px);
+    transform: translateY(-0.3rem);
   }
 }
 
@@ -176,6 +168,7 @@ a.linkExactActiveClass.linkActiveClass {
     height: 0px;
   }
   #nav-check:checked ~ .nav-links {
+    border-top: 1px solid black;
     box-shadow: 0 3px 3px black;
     height: 20rem;
     overflow-y: hidden;

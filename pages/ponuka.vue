@@ -262,7 +262,7 @@ export default {
 
 <style lang="scss" scoped>
 .heading-2 {
-  padding: 5rem 1rem 2rem 1rem;
+  padding: 5rem 2rem 2rem 2rem;
 }
 
 .ponuka-head {

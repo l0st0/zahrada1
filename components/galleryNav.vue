@@ -109,46 +109,46 @@ export default {
 
     background: linear-gradient(
         to bottom,
-        rgba(rgb(0, 0, 0), 1),
-        rgba(rgb(0, 0, 0), 0.7)
+        rgba(rgb(0, 0, 0), 0.9),
+        rgba(rgb(0, 0, 0), 0.8)
       ),
-      url(~assets/img/nav.jpg);
+      url(~assets/img/nav1.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top;
 
     &:hover {
-      box-shadow: 0px 0px 7px 4px black;
-      color: black;
+      box-shadow: 0px 0px 4px 1px black;
+      color: white;
 
       background: linear-gradient(
           to bottom,
-          rgba(rgb(255, 255, 255), 1),
-          rgba(rgb(255, 255, 255), 0.4)
+          rgba(rgb(0, 0, 0), 0.1),
+          rgba(rgb(0, 0, 0), 0.4)
         ),
-        url(~assets/img/nav.jpg);
+        url(~assets/img/nav1.jpg);
 
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: top;
     }
   }
 }
 
 .linkExactActiveClass {
-  box-shadow: 0px 0px 7px 4px black;
-  color: black;
+  box-shadow: 0px 0px 4px 1px black;
+  color: white;
   background: linear-gradient(
       to bottom,
-      rgba(rgb(255, 255, 255), 1),
-      rgba(rgb(255, 255, 255), 0.4)
+      rgba(rgb(0, 0, 0), 0.1),
+      rgba(rgb(0, 0, 0), 0.4)
     ),
-    url(~assets/img/nav.jpg);
+    url(~assets/img/nav1.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: top;
 }
 
 //Mobile

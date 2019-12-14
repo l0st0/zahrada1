@@ -40,15 +40,15 @@
 
         <div class="header-right">
           <div class="header-right__formular">
-            <form name="contact" method="POST" data-netlify="true" action="success.html">
+            <form name="contact" method="POST" data-netlify="true" action="/success">
               <input type="text" id="name" name="Meno" placeholder="Meno" />
 
               <input type="email" id="emain" name="Email" placeholder="Email" />
 
               <textarea id="subject" name="Správa" placeholder="Správa"></textarea>
               <div class="header-right__bottom">
-                <input type="submit" value="Odoslať" />
-                <div class="header-right__text">Ďakujeme!</div>
+                <input v-on:click="greet" type="submit" value="Odoslať" />
+                <div class="header-right__text">Kontaktujte nás!</div>
               </div>
             </form>
           </div>
@@ -62,6 +62,7 @@
     </header>
 
     <main class="main">
+      <Gallery />
       <div class="about">
         <div class="about-text">O nás</div>
 
@@ -110,7 +111,11 @@
 </template>
 
 <script>
+import Gallery from "@/components/homeGallery";
 export default {
+  components: {
+    Gallery
+  },
   data() {
     return {
       list: [
@@ -173,6 +178,7 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
+  padding-top: 3rem;
   color: white;
   font-family: $font-family4;
   font-weight: 300;
@@ -221,7 +227,7 @@ export default {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  padding: 0 0 3rem 0;
+  padding: 0 0 1rem 0;
 
   &__text {
     color: white;
@@ -244,8 +250,8 @@ export default {
 .header-mid {
   display: flex;
   margin: 0 auto;
-  padding: 2rem;
-  margin-top: 3rem;
+  padding: 1.5rem;
+  margin-top: 1.5rem;
 
   @media only screen and (max-width: $bg-md) {
     margin-top: 0;
@@ -389,14 +395,14 @@ input[type="submit"] {
 }
 
 .about {
-  padding-top: 7rem;
+  padding-top: 5rem;
 }
 
 .about-text {
   text-align: center;
-  font-size: 5rem;
-  font-family: $font-family1;
-  font-weight: 800;
+  font-size: 5.5rem;
+  font-family: $font-family3;
+  //font-weight: 800;
 }
 
 .box {
@@ -419,7 +425,7 @@ input[type="submit"] {
     font-size: 4rem;
     font-family: $font-family3;
     padding: 3rem;
-    border-top: 1px solid black;
+    border-top: 2px dashed black;
   }
 }
 
