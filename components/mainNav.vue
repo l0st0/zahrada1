@@ -1,27 +1,29 @@
 <template>
-  <div class="main-nav">
-    <input type="checkbox" id="nav-check" />
-    <nuxt-link linkExactActiveClass:active to="/" class="nav-title">
-      <img class="nav-title__svg" src="@/assets/img/logo.svg" alt />
-      <span>Záhradné centrum</span>
-    </nuxt-link>
-    <div class="nav-btn">
-      <label for="nav-check">
-        <div v-on:click="toggle" class="hamburger hamburger--slider" type="button">
-          <div class="hamburger-box">
-            <div class="hamburger-inner"></div>
+  <client-only>
+    <div class="main-nav">
+      <input type="checkbox" id="nav-check" />
+      <nuxt-link linkExactActiveClass:active to="/" class="nav-title">
+        <img class="nav-title__svg" src="@/assets/img/logo.svg" alt />
+        <span>Záhradné centrum</span>
+      </nuxt-link>
+      <div class="nav-btn">
+        <label for="nav-check">
+          <div v-on:click="toggle" class="hamburger hamburger--slider" type="button">
+            <div class="hamburger-box">
+              <div class="hamburger-inner"></div>
+            </div>
           </div>
-        </div>
-      </label>
-    </div>
+        </label>
+      </div>
 
-    <div v-on:click="close" class="nav-links">
-      <nuxt-link class="nav-links__item" to="/ponuka">Aktuálna ponuka</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/galeria/altanky">Galéria</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/vyroba">Výroba na mieru</nuxt-link>
-      <nuxt-link class="nav-links__item" to="/kontakt">Kontakt</nuxt-link>
+      <div v-on:click="close" class="nav-links">
+        <nuxt-link class="nav-links__item" to="/ponuka/">Aktuálna ponuka</nuxt-link>
+        <nuxt-link class="nav-links__item" to="/galeria/altanky/">Galéria</nuxt-link>
+        <nuxt-link class="nav-links__item" to="/vyroba/">Výroba na mieru</nuxt-link>
+        <nuxt-link class="nav-links__item" to="/kontakt/">Kontakt</nuxt-link>
+      </div>
     </div>
-  </div>
+  </client-only>
 </template>
 
 <script>

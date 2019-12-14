@@ -2,23 +2,23 @@
   <div class="kontakt">
     <div class="kontakt-main">
       <h3 class="kontakt-main__heading">Adresa:</h3>
-      <p1 class="kontakt-main__paragraph">Tatranská ulica 559/56a</p1>
-      <p1 class="kontakt-main__paragraph">Huncovce 059 92</p1>
-      <p1 class="kontakt-main__paragraph">Slovensko</p1>
+      <p class="kontakt-main__paragraph">Tatranská ulica 559/56a</p>
+      <p class="kontakt-main__paragraph">Huncovce 059 92</p>
+      <p class="kontakt-main__paragraph">Slovensko</p>
     </div>
 
     <div class="kontakt-main">
       <h3 class="kontakt-main__heading">Kontakt:</h3>
-      <p1 class="kontakt-main__paragraph">Jaroslava Bilinova</p1>
-      <p1 class="kontakt-main__paragraph">0915 354 558</p1>
-      <p1 class="kontakt-main__paragraph">jarka.bilinova@gmail.com</p1>
+      <p class="kontakt-main__paragraph">Jaroslava Bilinova</p>
+      <p class="kontakt-main__paragraph">0915 354 558</p>
+      <p class="kontakt-main__paragraph">jarka.bilinova@gmail.com</p>
     </div>
 
     <div class="kontakt-main">
       <h3 class="kontakt-main__heading">Otváracie hodiny:</h3>
-      <p1 class="kontakt-main__paragraph">Pon-Pia 09:00-17:00</p1>
-      <p1 class="kontakt-main__paragraph">Sobota 09:00-12:00</p1>
-      <p1 class="kontakt-main__paragraph">Nedeľa zatvorené</p1>
+      <p class="kontakt-main__paragraph">Pon-Pia 09:00-17:00</p>
+      <p class="kontakt-main__paragraph">Sobota 09:00-12:00</p>
+      <p class="kontakt-main__paragraph">Nedeľa zatvorené</p>
     </div>
 
     <div class="kontakt-main">

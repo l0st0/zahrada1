@@ -1,13 +1,15 @@
 <template>
-  <div>
-    <nav class="nav">
-      <MainNav />
-    </nav>
-    <nuxt />
-    <footer class="footer">
-      <Footer />
-    </footer>
-  </div>
+  <client-only>
+    <div>
+      <nav class="nav">
+        <MainNav />
+      </nav>
+      <nuxt />
+      <footer class="footer">
+        <Footer />
+      </footer>
+    </div>
+  </client-only>
 </template>
 
 <script>
