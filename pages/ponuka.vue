@@ -273,4 +273,14 @@ export default {
   margin: auto;
   text-align: center;
 }
+
+/* .image-container {
+  img {
+    width: 14rem !important;
+    height: 16rem !important;
+  }
+} */
 </style>
+
+
+
