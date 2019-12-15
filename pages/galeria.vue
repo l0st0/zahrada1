@@ -16,10 +16,10 @@ export default {
 
 <style lang="scss" scoped>
 .page-enter-active {
-  transition: all 1.5s ease-in;
+  transition: all 1s ease-in;
 }
 .page-leave-active {
-  transition: all 0.5s ease-out;
+  transition: all 1s ease-out;
 }
 .page-enter, .page-leave-to
 /* .slide-fade-leave-active below version 2.1.8 */ {

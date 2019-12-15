@@ -24,7 +24,7 @@
         ></iframe>
       </div>
       <div class="kontakt-bottom__formular">
-        <form name="kontakt" method="POST" data-netlify="true" action="success.html">
+        <form name="kontakt" method="POST" data-netlify="true" action="/success">
           <input type="text" id="name" name="Meno" placeholder="Meno" />
 
           <input type="email" id="emain" name="Email" placeholder="Email" />

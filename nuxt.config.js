@@ -1,6 +1,4 @@
-import {
-  skyblue
-} from "color-name";
+import { skyblue } from "color-name";
 
 export default {
   mode: "universal",
@@ -10,7 +8,8 @@ export default {
   head: {
     title: process.env.npm_package_name || "",
     lang: "sk",
-    meta: [{
+    meta: [
+      {
         charset: "utf-8"
       },
       {
@@ -23,14 +22,16 @@ export default {
         content: process.env.npm_package_description || ""
       }
     ],
-    link: [{
+    link: [
+      {
         rel: "icon",
         type: "image/x-icon",
         href: "/favicon.ico"
       },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Lato:300,400|Montserrat:400,500,600|Poiret+One&display=swap"
+        href:
+          "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Lato:300,400|Montserrat:400,500,600|Poiret+One&display=swap"
       }
     ]
   },
@@ -47,7 +48,8 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [{
+  plugins: [
+    {
       src: "~/plugins/vue-lazysizes.client.js"
     },
     {
@@ -66,7 +68,7 @@ export default {
 
   styleResources: {
     // your settings here
-    scss: ["@/assets/scss/_variables.scss", "@/assets/scss/galeria.scss"]
+    scss: ["@/assets/scss/_variables.scss", "@/assets/scss/_animations.scss"]
   },
 
   optimizedImages: {
@@ -91,13 +93,7 @@ export default {
    ** Build configuration
    */
   build: {
-    extend(config, {
-      isDev,
-      isClient,
-      loaders: {
-        vue
-      }
-    }) {
+    extend(config, { isDev, isClient, loaders: { vue } }) {
       if (isClient) {
         vue.transformAssetUrls.img = ["data-src", "src"];
         vue.transformAssetUrls.source = ["data-srcset", "srcset"];

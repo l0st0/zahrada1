@@ -166,7 +166,7 @@ export default {
     font-size: 2rem;
     font-family: $font-family2;
     font-weight: 600;
-    transform: translateY(0.2rem);
+    padding-top: 0.9rem;
   }
 
   &-items {
@@ -181,7 +181,7 @@ export default {
 }
 
 .icon1 {
-  padding-left: 1.2rem;
+  padding: 1rem 0 0 1.2rem;
   font-size: 3rem;
   color: black;
 

@@ -78,12 +78,16 @@ a.linkExactActiveClass.linkActiveClass {
   padding: 1rem;
   padding-left: 3rem;
 
+  @media only screen and (max-width: $bg-sx) {
+    font-size: 2rem;
+  }
+
   &:hover {
     color: green;
   }
 
   &__svg {
-    width: 2.6rem;
+    width: 26px;
     margin-right: 1.5rem;
     transform: translateY(-0.3rem);
   }
@@ -134,11 +138,15 @@ a.linkExactActiveClass.linkActiveClass {
     background-color: rgb(255, 255, 255);
     height: 0px;
     overflow-y: hidden;
-    top: 5.5rem;
+    top: 6rem;
     left: 0rem;
     padding-left: 5rem;
     transition: all 0.35s ease-out;
     font-size: 1.9rem;
+
+    @media only screen and (max-width: $bg-sx) {
+      top: 6.5rem;
+    }
 
     :nth-child(1) {
       padding-top: 2rem;
@@ -158,8 +166,8 @@ a.linkExactActiveClass.linkActiveClass {
 
       @media only screen and (max-width: $bg-sm) {
         width: 6rem;
-        right: 1rem;
-        top: 13rem;
+        right: 2rem;
+        top: 12.5rem;
       }
     }
   }

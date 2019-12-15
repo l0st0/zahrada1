@@ -188,36 +188,40 @@ export default {
   }
 
   &__1 {
-    font-size: 6rem;
+    font-size: 7rem;
     padding-right: 1.5rem;
 
+    @media only screen and (max-width: $bg-lg) {
+      font-size: 6rem;
+    }
+
     @media only screen and (max-width: $bg-md) {
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
 
     @media only screen and (max-width: $bg-sm) {
       font-size: 4rem;
-    }
-
-    @media only screen and (max-width: $bg-sx) {
-      font-size: 3rem;
       padding-right: 0rem;
     }
   }
 
   &__2 {
-    font-size: 7rem;
+    font-size: 9rem;
+
+    @media only screen and (max-width: $bg-lg) {
+      font-size: 8rem;
+    }
 
     @media only screen and (max-width: $bg-md) {
-      font-size: 6rem;
+      font-size: 6.5rem;
     }
 
     @media only screen and (max-width: $bg-sm) {
-      font-size: 5rem;
+      font-size: 6rem;
     }
 
     @media only screen and (max-width: $bg-sx) {
-      font-size: 4rem;
+      font-size: 5rem;
     }
   }
 }
@@ -228,6 +232,7 @@ export default {
   align-items: center;
   flex-direction: column;
   padding: 0 0 1rem 0;
+  animation: pulse infinite ease-in-out 1.5s;
 
   &__text {
     color: white;
@@ -251,7 +256,7 @@ export default {
   display: flex;
   margin: 0 auto;
   padding: 1.5rem;
-  margin-top: 1.5rem;
+  margin-top: 5rem;
 
   @media only screen and (max-width: $bg-md) {
     margin-top: 0;
@@ -275,6 +280,7 @@ export default {
   align-items: center;
   font-size: 1.6rem;
   padding: 2rem;
+  animation: 1s moveInRight 0s ease-in;
 
   &__text {
     color: white;
@@ -305,6 +311,7 @@ export default {
     //order: 1;
     padding: 1rem;
     margin: 0 auto;
+    animation: 1s moveInLeft 0s ease-in;
   }
 
   &__bottom {
@@ -358,6 +365,7 @@ input[type="submit"] {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: 1s moveInTop 0s ease-in;
 
   @media only screen and (max-width: $bg-md) {
     margin-top: 2rem;

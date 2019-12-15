@@ -6,7 +6,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/altanky">
           <img
-            data-src="@/assets/img/altany/1.jpg"
+            data-src="@/assets/img/altany/1s.jpg"
             alt="Altánky"
             class="lazyload gallery-flex__image--2 gallery-flex__image"
           />
@@ -17,7 +17,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/pristresky">
           <img
-            data-src="@/assets/img/pristresky/1.jpg"
+            data-src="@/assets/img/pristresky/1s.jpg"
             alt="Prístrešky"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -39,7 +39,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/zahrady">
           <img
-            data-src="@/assets/img/zahrady/1.jpg"
+            data-src="@/assets/img/zahrady/1s.jpg"
             alt="Zimné záhrady"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -61,7 +61,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/ploty">
           <img
-            data-src="@/assets/img/ploty/1.jpg"
+            data-src="@/assets/img/ploty/1s.jpg"
             alt="Ploty"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -94,7 +94,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/lavice">
           <img
-            data-src="@/assets/img/lavicky/1.jpg"
+            data-src="@/assets/img/lavicky/1s.jpg"
             alt="Lavice"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -105,7 +105,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/hojdacky">
           <img
-            data-src="@/assets/img/hojdacky/1.jpg"
+            data-src="@/assets/img/hojdacky/1s.jpg"
             alt="Hojdačky"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -116,7 +116,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/studne">
           <img
-            data-src="@/assets/img/studne/1.jpg"
+            data-src="@/assets/img/studne/1s.jpg"
             alt="Studne"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -127,7 +127,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/kvetinace">
           <img
-            data-src="@/assets/img/kvetinace/1.jpg"
+            data-src="@/assets/img/kvetinace/1s.jpg"
             alt="Kvetináče"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -138,7 +138,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/doplnky">
           <img
-            data-src="@/assets/img/doplnky/1.jpg"
+            data-src="@/assets/img/doplnky/1s.jpg"
             alt="Záhradné doplnky"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -149,7 +149,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/sviecky">
           <img
-            data-src="@/assets/img/sviecky/1.jpg"
+            data-src="@/assets/img/sviecky/1s.jpg"
             alt="Sviečky"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -160,7 +160,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/kamen">
           <img
-            data-src="@/assets/img/kamene/1.jpg"
+            data-src="@/assets/img/kamene/1s.jpg"
             alt="Kameň"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -213,28 +213,31 @@ export default {};
   }
 
   &__image {
-    width: 12rem;
+    width: 13rem;
     height: 12rem;
     transition: all 0.2s;
-    box-shadow: 0px 0px 2px 0.5px rgb(0, 0, 0);
+    box-shadow: 0px 0px 2px 1px rgb(70, 70, 70);
     border-radius: 3px;
 
     &:hover {
-      box-shadow: 0px 0px 4px 2px rgb(0, 0, 0);
+      box-shadow: 0px 0px 6px 2px rgb(70, 70, 70);
+      transform: scale(1.05);
     }
   }
 
   &__box {
-    font-size: 1.5rem;
-    color: black;
-    font-family: $font-family3;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.8rem;
+    padding: 0.6rem;
 
     &--text {
-      padding-top: 0.6rem;
+      font-size: 1.6rem;
+      color: black;
+      font-family: $font-family3;
+      font-weight: 500;
+      padding-top: 1rem;
+      padding-bottom: 0.4rem;
       text-align: center;
     }
   }
