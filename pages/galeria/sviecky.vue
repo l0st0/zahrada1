@@ -77,3 +77,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss" scoped>
+.image-container {
+  img {
+    width: 18rem !important;
+    height: 10rem !important;
+  }
+}
+</style>
