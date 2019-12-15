@@ -182,7 +182,18 @@ L99.411,199.476l21.178-21.248L227.5,284.791l106.911-106.563l21.178,21.248L227.5,
 </template>
 
 <script>
-export default {};
+export default {
+  head: {
+    title: "Výroba na mieru | Záhradné centrum",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content: "Premeníme Vašu záhradu podľa Vaších predstáv."
+      }
+    ]
+  }
+};
 </script>
 
 <style lang="scss" scoped>

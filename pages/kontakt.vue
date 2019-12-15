@@ -42,6 +42,18 @@ import Header from "@/components/header";
 export default {
   components: {
     Header
+  },
+
+  head: {
+    title: "Kontakt | Záhradné centrum",
+    meta: [
+      {
+        hid: "description",
+        name: "description",
+        content:
+          "Kontaktujte nás prostredníctvom e-mailu, telefonicky alebo formulárom."
+      }
+    ]
   }
 };
 </script>
