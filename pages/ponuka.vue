@@ -274,12 +274,12 @@ export default {
   text-align: center;
 }
 
-/* .image-container {
+.image-container {
   img {
-    width: 14rem !important;
-    height: 16rem !important;
+    width: 15rem !important;
+    height: 15rem !important;
   }
-} */
+}
 </style>
 
 
