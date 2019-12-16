@@ -40,16 +40,20 @@
 
         <div class="header-right">
           <div class="header-right__formular">
-            <form name="contact" method="POST" data-netlify="true" action="/success">
-              <input type="text" id="name" name="Meno" placeholder="Meno" />
+            <form name="contact" method="post" action="/success">
+              <input type="hidden" name="form-name" value="contact" />
+              <input type="text" id="name" name="Meno" placeholder="Meno" required />
 
-              <input type="email" id="emain" name="Email" placeholder="Email" />
+              <input type="email" id="emain" name="Email" placeholder="Email" required />
 
-              <textarea id="subject" name="Správa" placeholder="Správa"></textarea>
-              <div class="header-right__bottom">
-                <input type="submit" value="Odoslať" />
-                <div class="header-right__text">Kontaktujte nás!</div>
-              </div>
+              <textarea
+                id="subject"
+                name="Správa"
+                placeholder="Správa"
+                style="height:170px"
+                required
+              ></textarea>
+              <input type="submit" value="Odoslať" />
             </form>
           </div>
 

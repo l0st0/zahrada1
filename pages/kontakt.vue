@@ -24,12 +24,13 @@
         ></iframe>
       </div>
       <div class="kontakt-bottom__formular">
-        <form name="kontakt" method="POST" data-netlify="true" action="/success">
-          <input type="text" id="name" name="Meno" placeholder="Meno" />
+        <form name="contact" method="post" action="/success">
+          <input type="hidden" name="form-name" value="contact" />
+          <input type="text" id="name" name="Meno" placeholder="Meno" required />
 
-          <input type="email" id="emain" name="Email" placeholder="Email" />
+          <input type="email" id="emain" name="Email" placeholder="Email" required />
 
-          <textarea id="subject" name="Správa" placeholder="Správa" style="height:170px"></textarea>
+          <textarea id="subject" name="Správa" placeholder="Správa" style="height:170px" required></textarea>
           <input type="submit" value="Odoslať" />
         </form>
       </div>
