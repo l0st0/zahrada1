@@ -35,7 +35,10 @@
         </svg>
       </a>
     </div>
-    <div class="footer-copyright">&copy; Záhradné centrum 2019</div>
+    <div class="footer-copyright">
+      <img class="footer-copyright__svg" src="@/assets/img/svg/mylogo.svg" alt />
+      <span class="footer-copyright__text">Záhradné centrum &copy; 2019</span>
+    </div>
   </div>
 </template>
 
@@ -114,6 +117,13 @@ export default {};
   font-size: 1.5rem;
   color: white;
   background-color: rgb(0, 0, 0);
-  //width: 100%;
+
+  &__svg {
+    cursor: pointer;
+    width: 7.5rem;
+    position: absolute;
+    bottom: 0.8rem;
+    right: 1rem;
+  }
 }
 </style>

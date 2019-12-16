@@ -50,7 +50,7 @@
                 id="subject"
                 name="Správa"
                 placeholder="Správa"
-                style="height:170px"
+                style="height:100px"
                 required
               ></textarea>
               <input type="submit" value="Odoslať" />
