@@ -25,8 +25,8 @@ export default {
     link: [
       {
         rel: "icon",
-        type: "image/x-icon",
-        href: "/favicon.ico"
+        type: "image/png",
+        href: "/logo.png"
       },
       {
         rel: "stylesheet",
