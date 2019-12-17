@@ -25,18 +25,16 @@
       <h3 class="kontakt-main__heading">Sledujte nás:</h3>
 
       <a
+        class="kontakt-main__facebook"
         href="https://www.facebook.com/Z%C3%A1hradn%C3%A9-centrum-Huncovce-1691033311132796/"
         target="_blank"
+        rel="noopener"
       >
-        <svg class="kontakt-main__svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-          <path
-            d="M22.675 0h-21.35c-.732 0-1.325.593-1.325 1.325v21.351c0 .731.593 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.671c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12v9.293h6.116c.73 0 1.323-.593 1.323-1.325v-21.35c0-.732-.593-1.325-1.325-1.325z"
-          />
-        </svg>
+        <img class="kontakt-main__svg" src="@/assets/img/svg/facebook.svg" alt="facebook" />
       </a>
     </div>
     <div class="footer-copyright">
-      <img class="footer-copyright__svg" src="@/assets/img/svg/mylogo.svg" alt />
+      <img class="footer-copyright__svg" src="@/assets/img/svg/mylogo.svg" alt="lostweb logo" />
       <span class="footer-copyright__text">Záhradné centrum &copy; 2019</span>
     </div>
   </div>

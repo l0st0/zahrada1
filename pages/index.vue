@@ -8,19 +8,19 @@
         </div>
 
         <div class="objednavky">
-          <img class="objednavky__svg" src="@/assets/img/svg/home/zima2.svg" />
+          <img class="objednavky__svg" src="@/assets/img/svg/home/zima2.svg" alt="snow" />
           <div class="objednavky__text">Objednávky príjmame aj v zime!</div>
         </div>
       </div>
       <div class="header-mid">
         <div class="header-svg">
           <div class="svg-box">
-            <img class="svg-box__svg" src="@/assets/img/svg/home/ok.svg" />
+            <img class="svg-box__svg" src="@/assets/img/svg/home/ok.svg" alt="OK" />
             <div class="svg-box__text">Top materiály slovenskej výroby</div>
           </div>
 
           <div class="svg-box">
-            <img class="svg-box__svg" src="@/assets/img/svg/home/camera.svg" />
+            <img class="svg-box__svg" src="@/assets/img/svg/home/camera.svg" alt="kamera" />
             <div class="svg-box__text">
               <span>Fotografiu Vašej vysnenej záhrady</span>
               <span>premeníme na realitu</span>
@@ -28,12 +28,12 @@
           </div>
 
           <div class="svg-box">
-            <img class="svg-box__svg" src="@/assets/img/svg/home/car.svg" />
+            <img class="svg-box__svg" src="@/assets/img/svg/home/car.svg" alt="auto car" />
             <div class="svg-box__text">Rýchle dodanie priamo k Vám domov</div>
           </div>
 
           <div class="svg-box">
-            <img class="svg-box__svg" src="@/assets/img/svg/home/euro.svg" />
+            <img class="svg-box__svg" src="@/assets/img/svg/home/euro.svg" alt="euro" />
             <div class="svg-box__text">Najnižšie ceny výroby na mieru</div>
           </div>
         </div>
@@ -58,7 +58,7 @@
           </div>
 
           <div class="prianie">
-            <img class="prianie__svg" src="@/assets/img/svg/christmas.svg" alt />
+            <img class="prianie__svg" src="@/assets/img/svg/christmas.svg" alt="christmas" />
             <div class="prianie__text">Želáme Vám krásne vianočné sviatky plné šťastia a pohody</div>
           </div>
         </div>
@@ -126,27 +126,27 @@ export default {
         {
           thumb: require("~/assets/img/certifikat/1.jpg"),
           url: require("~/assets/img/certifikat/1.jpg"),
-          alt: "certifikat"
+          alt: "certifikat podtatranske vystavne trhy"
         },
         {
           thumb: require("~/assets/img/certifikat/2.jpg"),
           url: require("~/assets/img/certifikat/2.jpg"),
-          alt: "certifikat"
+          alt: "certifikat osmo"
         },
         {
           thumb: require("~/assets/img/certifikat/3.jpg"),
           url: require("~/assets/img/certifikat/3.jpg"),
-          alt: "certifikat"
+          alt: "certifikat tatra expo"
         },
         {
           thumb: require("~/assets/img/certifikat/4.jpg"),
           url: require("~/assets/img/certifikat/4.jpg"),
-          alt: "certifikat"
+          alt: "certifikat tatra expo"
         },
         {
           thumb: require("~/assets/img/certifikat/5.jpg"),
           url: require("~/assets/img/certifikat/5.jpg"),
-          alt: "certifikat"
+          alt: "certifikat spisske vystavne trhy"
         }
       ]
     };

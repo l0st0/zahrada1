@@ -37,107 +37,107 @@ export default {
         {
           thumb: require("~/assets/img/aktualne/1s.jpg"),
           url: require("~/assets/img/aktualne/1.jpg"),
-          alt: "altanok"
+          alt: "studne"
         },
         {
           thumb: require("~/assets/img/aktualne/2s.jpg"),
           url: require("~/assets/img/aktualne/2.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/3s.jpg"),
           url: require("~/assets/img/aktualne/3.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/4s.jpg"),
           url: require("~/assets/img/aktualne/4.jpg"),
-          alt: "altanok"
+          alt: "lavicka"
         },
         {
           thumb: require("~/assets/img/aktualne/5s.jpg"),
           url: require("~/assets/img/aktualne/5.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/6s.jpg"),
           url: require("~/assets/img/aktualne/6.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/7s.jpg"),
           url: require("~/assets/img/aktualne/7.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/8s.jpg"),
           url: require("~/assets/img/aktualne/8.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/9s.jpg"),
           url: require("~/assets/img/aktualne/9.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/10s.jpg"),
           url: require("~/assets/img/aktualne/10.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/11s.jpg"),
           url: require("~/assets/img/aktualne/11.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/12s.jpg"),
           url: require("~/assets/img/aktualne/12.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/13s.jpg"),
           url: require("~/assets/img/aktualne/13.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/14s.jpg"),
           url: require("~/assets/img/aktualne/14.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/15s.jpg"),
           url: require("~/assets/img/aktualne/15.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/16s.jpg"),
           url: require("~/assets/img/aktualne/16.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/17s.jpg"),
           url: require("~/assets/img/aktualne/17.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/18s.jpg"),
           url: require("~/assets/img/aktualne/18.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/19s.jpg"),
           url: require("~/assets/img/aktualne/19.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/20s.jpg"),
           url: require("~/assets/img/aktualne/20.jpg"),
-          alt: "altanok"
+          alt: "sedenie"
         },
         {
           thumb: require("~/assets/img/aktualne/21s.jpg"),
           url: require("~/assets/img/aktualne/21.jpg"),
-          alt: "altanok"
+          alt: "studna"
         },
         {
           thumb: require("~/assets/img/aktualne/22s.jpg"),
