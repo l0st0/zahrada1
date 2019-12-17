@@ -28,7 +28,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/garaze">
           <img
-            data-src="@/assets/img/garaze/3.jpg"
+            data-src="@/assets/img/garaze/1s.jpg"
             alt="Garáže"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -50,7 +50,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/chatky">
           <img
-            data-src="@/assets/img/chatky/4.jpg"
+            data-src="@/assets/img/chatky/4s.jpg"
             alt="Chatky a sklady"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -72,7 +72,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/ihriska">
           <img
-            data-src="@/assets/img/ihriska/6.jpg"
+            data-src="@/assets/img/ihriska/1s.jpg"
             alt="Detské ihriská"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
@@ -83,7 +83,7 @@
       <div class="gallery-flex__box">
         <a href="/galeria/sedenia">
           <img
-            data-src="@/assets/img/sedenia/2.jpg"
+            data-src="@/assets/img/sedenia/1s.jpg"
             alt="Sedenia"
             class="lazyload gallery-flex__image--1 gallery-flex__image"
           />
