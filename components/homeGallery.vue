@@ -92,7 +92,7 @@
       </div>
 
       <div class="gallery-flex__box">
-        <a href="/galeria/lavice">
+        <a href="/galeria/lavicky">
           <img
             data-src="@/assets/img/lavicky/1s.jpg"
             alt="Lavice"

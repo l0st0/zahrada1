@@ -98,57 +98,55 @@ export default {
   &__item {
     padding: 1.2rem;
     margin: 0.6rem;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-family: $font-family3;
     font-weight: 800;
-    letter-spacing: 1.3px;
+    letter-spacing: 0.4px;
     color: white;
-    box-shadow: 0px 0px 2px 1px black;
+    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
     min-width: 18rem;
-    //transition: 0.5s ease;
 
     background: linear-gradient(
         to bottom,
-        rgba(rgb(0, 0, 0), 0.9),
+        rgba(rgb(0, 0, 0), 0.8),
         rgba(rgb(0, 0, 0), 0.8)
       ),
-      url(~assets/img/nav1.jpg);
+      url(~assets/img/bgn6.jpg);
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: top;
+    background-position: center;
 
     &:hover {
-      box-shadow: 0px 0px 4px 1px black;
-      color: white;
-
+      box-shadow: 0px 0px 5px 2px black;
+      color: black;
       background: linear-gradient(
           to bottom,
-          rgba(rgb(0, 0, 0), 0.1),
-          rgba(rgb(0, 0, 0), 0.4)
+          rgba(rgb(255, 255, 255), 0.2),
+          rgba(rgb(255, 255, 255), 0.2)
         ),
-        url(~assets/img/nav1.jpg);
+        url(~assets/img/bgn6.jpg);
 
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: top;
+      background-position: center;
     }
   }
 }
 
 .linkExactActiveClass {
-  box-shadow: 0px 0px 4px 1px black;
-  color: white;
+  box-shadow: 0px 0px 5px 2px black;
+  color: black;
   background: linear-gradient(
       to bottom,
-      rgba(rgb(0, 0, 0), 0.1),
-      rgba(rgb(0, 0, 0), 0.4)
+      rgba(rgb(255, 255, 255), 0.2),
+      rgba(rgb(255, 255, 255), 0.2)
     ),
-    url(~assets/img/nav1.jpg);
+    url(~assets/img/bgn6.jpg);
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 
 //Mobile
