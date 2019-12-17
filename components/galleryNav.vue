@@ -96,7 +96,7 @@ export default {
   }
 
   &__item {
-    padding: 1.2rem;
+    padding: 1.5rem;
     margin: 0.6rem;
     font-size: 1.6rem;
     font-family: $font-family3;
@@ -104,14 +104,14 @@ export default {
     letter-spacing: 0.4px;
     color: white;
     box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
-    min-width: 18rem;
+    min-width: 22rem;
 
     background: linear-gradient(
         to bottom,
-        rgba(rgb(0, 0, 0), 0.8),
-        rgba(rgb(0, 0, 0), 0.8)
+        rgba(rgb(0, 0, 0), 0.9),
+        rgba(rgb(0, 0, 0), 0.9)
       ),
-      url(~assets/img/bgn6.jpg);
+      url(~assets/img/bg.svg);
 
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,10 +122,10 @@ export default {
       color: black;
       background: linear-gradient(
           to bottom,
-          rgba(rgb(255, 255, 255), 0.2),
-          rgba(rgb(255, 255, 255), 0.2)
+          rgba(rgb(255, 255, 255), 0),
+          rgba(rgb(255, 255, 255), 0)
         ),
-        url(~assets/img/bgn6.jpg);
+        url(~assets/img/bg.svg);
 
       background-repeat: no-repeat;
       background-size: cover;
@@ -139,10 +139,10 @@ export default {
   color: black;
   background: linear-gradient(
       to bottom,
-      rgba(rgb(255, 255, 255), 0.2),
-      rgba(rgb(255, 255, 255), 0.2)
+      rgba(rgb(255, 255, 255), 0),
+      rgba(rgb(255, 255, 255), 0)
     ),
-    url(~assets/img/bgn6.jpg);
+    url(~assets/img/bg.svg);
 
   background-repeat: no-repeat;
   background-size: cover;
