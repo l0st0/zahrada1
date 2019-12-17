@@ -64,10 +64,14 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ["@bazzite/nuxt-optimized-images", "@nuxtjs/style-resources", '@nuxtjs/sitemap'],
+  modules: [
+    "@bazzite/nuxt-optimized-images",
+    "@nuxtjs/style-resources",
+    "@nuxtjs/sitemap"
+  ],
 
   sitemap: {
-    hostname: 'https://zahradnecentrumhuncovce.sk',
+    hostname: "https://zahradnecentrumhuncovce.sk",
     gzip: true,
     routes: []
   },

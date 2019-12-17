@@ -109,13 +109,13 @@ export default {
     background: linear-gradient(
         to bottom,
         rgba(rgb(0, 0, 0), 0.9),
-        rgba(rgb(0, 0, 0), 0.9)
+        rgba(rgb(0, 0, 0), 1)
       ),
       url(~assets/img/bg.svg);
 
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: bottom;
 
     &:hover {
       box-shadow: 0px 0px 5px 2px black;
@@ -129,7 +129,7 @@ export default {
 
       background-repeat: no-repeat;
       background-size: cover;
-      background-position: center;
+      background-position: bottom;
     }
   }
 }
@@ -146,7 +146,7 @@ export default {
 
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
+  background-position: bottom;
 }
 
 //Mobile

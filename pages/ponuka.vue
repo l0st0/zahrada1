@@ -6,7 +6,7 @@
     <v-gallery :images="list">
       <a class="lightBoxGallery__a" v-for="img in list" :data-image="img.url" v-bind:key="img.id">
         <div class="image-container">
-          <img class="lazyload" :data-src="img.thumb" :alt="img.alt" />
+          <img class="lazyload" src="@/assets/img/loading.svg" :data-src="img.thumb" :alt="img.alt" />
         </div>
       </a>
     </v-gallery>

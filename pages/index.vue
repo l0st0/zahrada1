@@ -1,6 +1,7 @@
 <template>
   <div class="container">
     <header class="header">
+      <Snow />
       <div class="header-top">
         <div class="header-text">
           <div class="header-text__1">Záhradné centrum</div>
@@ -116,9 +117,11 @@
 
 <script>
 import Gallery from "@/components/homeGallery";
+import Snow from "@/components/snow";
 export default {
   components: {
-    Gallery
+    Gallery,
+    Snow
   },
   data() {
     return {
@@ -182,10 +185,11 @@ export default {
   justify-content: center;
   align-items: center;
   padding: 1.5rem;
-  padding-top: 3rem;
+  padding-top: 2rem;
   color: white;
   font-family: $font-family4;
   font-weight: 300;
+  z-index: 2;
 
   @media only screen and (max-width: $bg-sm) {
     flex-direction: column;
@@ -237,6 +241,7 @@ export default {
   flex-direction: column;
   padding: 0 0 1rem 0;
   animation: pulse infinite ease-in-out 1.5s;
+  z-index: 2;
 
   &__text {
     color: white;
@@ -260,7 +265,8 @@ export default {
   display: flex;
   margin: 0 auto;
   padding: 1.5rem;
-  margin-top: 5rem;
+  margin: 3rem auto;
+  z-index: 2;
 
   @media only screen and (max-width: $bg-md) {
     margin-top: 0;

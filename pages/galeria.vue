@@ -16,11 +16,11 @@ export default {
 
 <style lang="scss" scoped>
 .page-enter-active {
-  animation: acrossIn 1s ease;
+  animation: acrossIn 0.5s ease-in-out;
 }
 
 .page-leave-active {
-  animation: acrossOut 1s ease;
+  animation: acrossOut 0.5s ease-in-out;
 }
 
 @keyframes acrossIn {
