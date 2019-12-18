@@ -47,7 +47,7 @@ a {
   background: linear-gradient(to bottom,
       rgba(rgb(255, 255, 255), 0.7),
       rgba(rgb(255, 255, 255), 0.7)),
-    url(../img/bga1.png);
+    url(../img/bga2.jpg);
 
   background-repeat: repeat;
   //background-position: left;
@@ -59,11 +59,11 @@ a {
 }
 
 .page-enter-active {
-  transition: all 1.2s ease-in;
+  transition: all 0.5s ease-in-out;
 }
 
 .page-leave-active {
-  transition: all 0.5s ease-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .page-enter,
