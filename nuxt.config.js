@@ -6,8 +6,11 @@ export default {
    ** Headers of the page
    */
   head: {
+    htmlAttrs: {
+      lang: "sk",
+    },
     title: "Záhradné centrum Huncovce",
-    lang: "sk",
+
     meta: [
       {
         charset: "utf-8"
