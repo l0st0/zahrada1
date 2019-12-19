@@ -31,12 +31,16 @@ export default {
         type: "image/png",
         href: "/logo.png"
       },
-      {
+      /* {
         rel: "stylesheet",
         href:
-          "https://fonts.googleapis.com/css?family=Comfortaa:400,500,600|Lato:300,400|Montserrat:400,500,600|Poiret+One&display=swap"
-      }
-    ]
+          "https://fonts.googleapis.com/css?family=Lato:300|Montserrat:300&display=swap"
+      } */
+    ],
+
+    script: [{
+      src: "/google.js", defer: true
+    }]
   },
   /*
    ** Customize the progress-bar color

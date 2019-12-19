@@ -27,7 +27,7 @@ export default {
 .nav {
   position: sticky;
   top: 0;
-  z-index: 2;
+  z-index: 5;
 }
 
 .main {

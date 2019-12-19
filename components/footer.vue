@@ -30,11 +30,19 @@
         target="_blank"
         rel="noopener"
       >
-        <img class="kontakt-main__svg" src="@/assets/img/svg/facebook.svg" alt="facebook" />
+        <img
+          class="kontakt-main__svg lazyload"
+          data-src="@/assets/img/svg/facebook.svg"
+          alt="facebook"
+        />
       </a>
     </div>
     <div class="footer-copyright">
-      <img class="footer-copyright__svg" src="@/assets/img/svg/mylogo.svg" alt="lostweb logo" />
+      <img
+        class="footer-copyright__svg lazyload"
+        data-src="@/assets/img/svg/mylogo.svg"
+        alt="lostweb logo"
+      />
       <span class="footer-copyright__text">Záhradné centrum &copy; 2019</span>
     </div>
   </div>

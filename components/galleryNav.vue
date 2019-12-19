@@ -162,7 +162,7 @@ export default {
 
   &-text {
     font-size: 2rem;
-    font-family: $font-family2;
+    font-family: $font-family3;
     font-weight: 600;
     padding-top: 0.9rem;
   }

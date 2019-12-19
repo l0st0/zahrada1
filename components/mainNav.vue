@@ -63,7 +63,6 @@ a.linkExactActiveClass.linkActiveClass {
   font-family: $font-family3;
   font-weight: 500;
   box-shadow: 0 0 5px 2px black;
-  z-index: 2;
 
   display: flex;
   justify-content: space-between;

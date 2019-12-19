@@ -43,23 +43,42 @@
           <div class="header-right__formular">
             <form name="contact" method="post" action="/success">
               <input type="hidden" name="form-name" value="contact" />
-              <input type="text" id="name" name="Meno" placeholder="Meno" required />
+              <label for="name">
+                Vaše meno
+                <input type="text" id="name" name="Meno" placeholder="Meno" required />
+              </label>
 
-              <input type="email" id="emain" name="Email" placeholder="Email" required />
+              <label for="email">
+                Váš email na ktorý Vám odpíšeme
+                <input
+                  type="email"
+                  id="email"
+                  name="Email"
+                  placeholder="Email"
+                  required
+                />
+              </label>
 
-              <textarea
-                id="subject"
-                name="Správa"
-                placeholder="Správa"
-                style="height:100px"
-                required
-              ></textarea>
+              <label for="subject">
+                Napíšte nám správu
+                <textarea
+                  id="subject"
+                  name="Správa"
+                  placeholder="Správa"
+                  style="height:100px"
+                  required
+                ></textarea>
+              </label>
               <input type="submit" value="Odoslať" />
             </form>
           </div>
 
           <div class="prianie">
-            <img class="prianie__svg" src="@/assets/img/svg/christmas.svg" alt="christmas" />
+            <img
+              class="prianie__svg lazyload"
+              data-src="@/assets/img/svg/christmas.svg"
+              alt="christmas"
+            />
             <div class="prianie__text">Želáme Vám krásne vianočné sviatky plné šťastia a pohody</div>
           </div>
         </div>
@@ -158,6 +177,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+label {
+  color: white;
+  font-size: 0rem;
+}
 // HEADER
 .header {
   min-height: calc(100vh - 5.5rem);
@@ -343,7 +366,7 @@ input[type="text"],
 input[type="email"],
 select,
 textarea {
-  margin-bottom: 0.8rem;
+  //margin-bottom: 0.4rem;
   width: 100%;
   padding: 1rem;
   border: 2px solid rgb(163, 163, 163);
@@ -365,6 +388,7 @@ input[type="submit"] {
   font-weight: 800;
   transition: 0.1s;
   display: block;
+  margin-top: 0.8rem;
 
   &:hover {
     transform: scale(1.05);
@@ -407,7 +431,7 @@ input[type="submit"] {
       rgba(rgb(255, 255, 255), 0.8),
       rgba(rgb(255, 255, 255), 0.8)
     ),
-    url(~assets/img/bga1.png);
+    url(~assets/img/bga2.webp);
 
   background-repeat: repeat;
 }
