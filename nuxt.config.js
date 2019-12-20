@@ -7,7 +7,7 @@ export default {
    */
   head: {
     htmlAttrs: {
-      lang: "sk",
+      lang: "sk"
     },
     title: "Záhradné centrum Huncovce",
 
@@ -30,17 +30,8 @@ export default {
         rel: "icon",
         type: "image/png",
         href: "/logo.png"
-      },
-      /* {
-        rel: "stylesheet",
-        href:
-          "https://fonts.googleapis.com/css?family=Lato:300|Montserrat:300&display=swap"
-      } */
-    ],
-
-    script: [{
-      src: "/google.js", defer: true
-    }]
+      }
+    ]
   },
   /*
    ** Customize the progress-bar color
@@ -74,8 +65,20 @@ export default {
   modules: [
     "@bazzite/nuxt-optimized-images",
     "@nuxtjs/style-resources",
-    "@nuxtjs/sitemap"
+    "@nuxtjs/sitemap",
+    "nuxt-webfontloader",
+    "@nuxtjs/google-analytics"
   ],
+
+  webfontloader: {
+    google: {
+      families: ["Lato:300,400", "Montserrat: 300, 400"]
+    }
+  },
+
+  googleAnalytics: {
+    id: "UA-149902214-1"
+  },
 
   sitemap: {
     hostname: "https://zahradnecentrumhuncovce.sk",
