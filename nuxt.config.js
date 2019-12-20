@@ -67,8 +67,18 @@ export default {
     "@nuxtjs/style-resources",
     "@nuxtjs/sitemap",
     "nuxt-webfontloader",
-    "@nuxtjs/google-analytics"
+    "@nuxtjs/google-analytics",
+    "nuxt-compress"
   ],
+
+  "nuxt-compress": {
+    gzip: {
+      cache: true
+    },
+    brotli: {
+      threshold: 10240
+    }
+  },
 
   webfontloader: {
     google: {
