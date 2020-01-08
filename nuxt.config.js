@@ -81,18 +81,8 @@ export default {
   },
 
   webfontloader: {
-    // add Google Fonts as "custom" | workaround required
-    custom: {
-      families: [
-        'Montserrat:n4',
-        'Lato:n4'
-      ],
-      urls: [
-        // for each Google Fonts add url + options you want
-        // here add font-display option
-        'https://fonts.googleapis.com/css?family=Montserrat&display=swap',
-        'https://fonts.googleapis.com/css?family=Lato&display=swap'
-      ]
+    google: {
+      families: ['Montserrat&display=swap']
     }
   },
 

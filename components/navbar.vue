@@ -84,7 +84,7 @@ a.linkExactActiveClass.linkActiveClass {
   }
 
   &__svg {
-    width: 40px;
+    width: 35px;
     margin-right: 1.5rem;
     transform: translateY(-0.2rem);
   }
@@ -96,7 +96,7 @@ a.linkExactActiveClass.linkActiveClass {
 
 .nav-links {
   display: flex;
-  font-size: 1.6rem;
+  font-size: 1.7rem;
 
   &__item {
     padding: 1rem 3rem;
@@ -104,7 +104,7 @@ a.linkExactActiveClass.linkActiveClass {
     color: black;
 
     @media only screen and (max-width: $bg-lg) {
-      padding: 1rem 1.8rem;
+      padding: 1rem 2rem;
     }
 
     &:hover {

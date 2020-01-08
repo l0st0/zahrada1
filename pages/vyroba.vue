@@ -229,14 +229,14 @@ export default {
     margin-bottom: 1rem;
 
     @media only screen and (max-width: $bg-lg) {
-      height: 6rem;
+      height: 7rem;
     }
 
     &-arrow {
       width: 3.7rem;
 
       @media only screen and (max-width: $bg-lg) {
-        width: 2.5rem;
+        width: 2.7rem;
       }
 
       @media only screen and (max-width: $bg-sm) {
@@ -250,7 +250,7 @@ export default {
     font-size: 1.5rem;
 
     @media only screen and (max-width: $bg-lg) {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
     }
   }
 }

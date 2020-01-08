@@ -128,6 +128,7 @@ textarea {
   border-radius: 5px;
   font-size: 1.3rem;
   font-family: "Montserrat";
+  font-weight: 600;
 }
 
 input[type="submit"] {
@@ -140,6 +141,7 @@ input[type="submit"] {
   transition: 0.1s;
   display: block;
   font-family: "Montserrat";
+  font-weight: 600;
 }
 
 input[type="submit"]:hover {

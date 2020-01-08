@@ -1,7 +1,6 @@
 <template>
   <div class="container">
     <header class="header">
-      <Snow />
       <div class="header-top">
         <div class="header-text">
           <div class="header-text__1">Záhradné centrum</div>
@@ -136,11 +135,9 @@
 
 <script>
 import Gallery from "@/components/homeGallery";
-import Snow from "@/components/snow";
 export default {
   components: {
-    Gallery,
-    Snow
+    Gallery
   },
   data() {
     return {
@@ -210,7 +207,6 @@ label {
   padding: 1.5rem;
   padding-top: 2rem;
   color: white;
-  font-family: "Lato";
   z-index: 2;
 
   @media only screen and (max-width: $bg-sm) {
@@ -218,40 +214,40 @@ label {
   }
 
   &__1 {
-    font-size: 7rem;
+    font-size: 6rem;
     padding-right: 1.5rem;
 
     @media only screen and (max-width: $bg-lg) {
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     @media only screen and (max-width: $bg-md) {
-      font-size: 4.5rem;
+      font-size: 4rem;
     }
 
     @media only screen and (max-width: $bg-sm) {
-      font-size: 4rem;
+      font-size: 3.5rem;
       padding-right: 0rem;
     }
   }
 
   &__2 {
-    font-size: 9rem;
+    font-size: 8.5rem;
 
     @media only screen and (max-width: $bg-lg) {
-      font-size: 8rem;
+      font-size: 7rem;
     }
 
     @media only screen and (max-width: $bg-md) {
-      font-size: 6.5rem;
+      font-size: 5.5rem;
     }
 
     @media only screen and (max-width: $bg-sm) {
-      font-size: 6rem;
+      font-size: 5rem;
     }
 
     @media only screen and (max-width: $bg-sx) {
-      font-size: 5rem;
+      font-size: 4.5rem;
     }
   }
 }
@@ -370,6 +366,7 @@ textarea {
   border-radius: 5px;
   font-size: 1.3rem;
   font-family: "Montserrat";
+  font-weight: 600;
 }
 
 input[type="submit"] {
@@ -383,6 +380,7 @@ input[type="submit"] {
   transition: 0.1s;
   display: block;
   margin-top: 0.8rem;
+  font-weight: 600;
 
   &:hover {
     transform: scale(1.05);
