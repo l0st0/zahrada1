@@ -184,8 +184,6 @@ export default {};
   text-align: left;
   font-size: 3rem;
   padding: 2rem;
-  font-family: $font-family3;
-  //font-weight: 800;
 }
 
 .gallery-flex {
@@ -234,8 +232,6 @@ export default {};
     &--text {
       font-size: 1.6rem;
       color: black;
-      font-family: $font-family3;
-      font-weight: 500;
       padding-top: 1rem;
       padding-bottom: 0.4rem;
       text-align: center;

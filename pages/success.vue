@@ -30,7 +30,6 @@
 .success {
   text-align: center;
   font-size: 1.8rem;
-  font-family: $font-family3;
 
   &__sub {
     padding-top: 1rem;

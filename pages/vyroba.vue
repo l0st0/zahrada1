@@ -130,7 +130,6 @@ export default {
     font-size: 2rem;
     text-align: left;
     line-height: 1.3;
-    font-family: $font-family3;
   }
 }
 
@@ -148,7 +147,6 @@ export default {
     text-align: center;
     font-size: 4.5rem;
     padding-left: 5rem;
-    font-family: $font-family3;
 
     @media only screen and (max-width: $bg-sm) {
       font-size: 4rem;
@@ -178,7 +176,7 @@ export default {
 .vyroba-text {
   font-size: 3rem;
   text-align: center;
-  font-family: $font-family3;
+
   padding: 0 2rem;
   padding-top: 7rem;
   padding-bottom: 2rem;
@@ -250,8 +248,6 @@ export default {
   &__text {
     text-align: center;
     font-size: 1.5rem;
-    font-family: $font-family3;
-    font-weight: 500;
 
     @media only screen and (max-width: $bg-lg) {
       font-size: 1.3rem;

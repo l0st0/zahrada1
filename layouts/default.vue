@@ -1,23 +1,21 @@
 <template>
-  <client-only>
-    <div>
-      <nav class="nav">
-        <MainNav />
-      </nav>
-      <nuxt />
-      <footer class="footer">
-        <Footer />
-      </footer>
-    </div>
-  </client-only>
+  <div>
+    <nav class="nav">
+      <Navbar />
+    </nav>
+    <nuxt />
+    <footer class="footer">
+      <Footer />
+    </footer>
+  </div>
 </template>
 
 <script>
-import MainNav from "@/components/mainNav";
+import Navbar from "@/components/navbar";
 import Footer from "@/components/footer";
 export default {
   components: {
-    MainNav,
+    Navbar,
     Footer
   }
 };

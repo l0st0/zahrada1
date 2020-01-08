@@ -6,7 +6,7 @@
     <v-gallery :images="list">
       <a class="lightBoxGallery__a" v-for="img in list" :data-image="img.url" v-bind:key="img.id">
         <div class="image-container">
-          <img class="lazyload" src="@/assets/img/loading.svg" :data-src="img.thumb" :alt="img.alt" />
+          <img class="lazyload" src="@/assets/img/loading.png" :data-src="img.thumb" :alt="img.alt" />
         </div>
       </a>
     </v-gallery>
@@ -268,7 +268,6 @@ export default {
 .ponuka-head {
   font-size: 2rem;
   padding-bottom: 4rem;
-  font-family: $font-family3;
   line-height: 1.5;
   margin: auto;
   text-align: center;

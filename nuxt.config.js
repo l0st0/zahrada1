@@ -1,7 +1,7 @@
 import { skyblue } from "color-name";
 
 export default {
-  mode: "universal",
+  mode: "spa",
   /*
    ** Headers of the page
    */
@@ -82,7 +82,7 @@ export default {
 
   webfontloader: {
     google: {
-      families: ["Lato:300,400", "Montserrat: 300, 400"]
+      families: ["Lato: 300", "Montserrat: 400"]
     }
   },
 

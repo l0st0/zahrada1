@@ -64,7 +64,6 @@ export default {
   font-size: 2rem;
   max-width: 52rem;
   padding-bottom: 2rem;
-  font-family: $font-family3;
   line-height: 1.5;
   margin: auto;
   text-align: center;
@@ -128,8 +127,7 @@ textarea {
   border: 2px solid rgb(163, 163, 163);
   border-radius: 5px;
   font-size: 1.3rem;
-  font-family: $font-family3;
-  font-weight: 800;
+  font-family: "Montserrat";
 }
 
 input[type="submit"] {
@@ -139,10 +137,9 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  font-family: $font-family3;
-  font-weight: 800;
   transition: 0.1s;
   display: block;
+  font-family: "Montserrat";
 }
 
 input[type="submit"]:hover {

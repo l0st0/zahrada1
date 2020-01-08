@@ -21,7 +21,6 @@ export default {};
 .snowflake {
   color: #fff;
   font-size: 2.5rem;
-  font-family: Arial;
   text-shadow: 0 0 1px #000;
   //display: none;
 }

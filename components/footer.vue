@@ -38,12 +38,15 @@
       </a>
     </div>
     <div class="footer-copyright">
-      <img
-        class="footer-copyright__svg lazyload"
-        data-src="@/assets/img/svg/mylogo.svg"
-        alt="lostweb logo"
-      />
-      <span class="footer-copyright__text">Záhradné centrum &copy; 2019</span>
+      <span class="footer-copyright__text">2020 &copy; Záhradné centrum</span>
+      <div class="me">
+        <div class="email">lostwebsk@gmail.com -</div>
+        <img
+          class="footer-copyright__svg lazyload"
+          data-src="@/assets/img/svg/mylogo.svg"
+          alt="lostweb logo"
+        />
+      </div>
     </div>
   </div>
 </template>
@@ -57,7 +60,6 @@ export default {};
   padding: 1.5rem;
   opacity: 0.9;
   text-align: center;
-  font-family: $font-family3;
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -127,9 +129,19 @@ export default {};
   &__svg {
     cursor: pointer;
     width: 7.5rem;
-    position: absolute;
-    bottom: 0.8rem;
-    right: 1rem;
+    padding-left: 1rem;
   }
+}
+
+.me {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0.8rem;
+  right: 1rem;
+}
+
+.email {
+  font-size: 1.3rem;
 }
 </style>

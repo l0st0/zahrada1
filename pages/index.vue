@@ -210,8 +210,7 @@ label {
   padding: 1.5rem;
   padding-top: 2rem;
   color: white;
-  font-family: $font-family4;
-  font-weight: 300;
+  font-family: "Lato";
   z-index: 2;
 
   @media only screen and (max-width: $bg-sm) {
@@ -269,7 +268,6 @@ label {
   &__text {
     color: white;
     text-align: center;
-    font-family: $font-family3;
     padding-top: 1.5rem;
     font-size: 1.8rem;
     letter-spacing: 1px;
@@ -318,7 +316,6 @@ label {
   &__text {
     color: white;
     text-align: center;
-    font-family: $font-family3;
     display: flex;
     flex-direction: column;
     padding-top: 1.5rem;
@@ -355,7 +352,6 @@ label {
   &__text {
     color: white;
     font-size: 1.8rem;
-    font-family: $font-family3;
 
     padding-left: 2rem;
   }
@@ -373,8 +369,7 @@ textarea {
   resize: vertical;
   border-radius: 5px;
   font-size: 1.3rem;
-  font-family: $font-family3;
-  font-weight: 800;
+  font-family: "Montserrat";
 }
 
 input[type="submit"] {
@@ -384,8 +379,7 @@ input[type="submit"] {
   border: none;
   cursor: pointer;
   border-radius: 10px;
-  font-family: $font-family3;
-  font-weight: 800;
+  font-family: "Montserrat";
   transition: 0.1s;
   display: block;
   margin-top: 0.8rem;
@@ -419,7 +413,6 @@ input[type="submit"] {
     text-align: center;
     color: white;
     font-size: 2rem;
-    font-family: $font-family3;
     //padding: 1rem;
   }
 }
@@ -443,8 +436,6 @@ input[type="submit"] {
 .about-text {
   text-align: center;
   font-size: 5.5rem;
-  font-family: $font-family3;
-  //font-weight: 800;
 }
 
 .box {
@@ -457,7 +448,6 @@ input[type="submit"] {
     font-size: 2.1rem;
     text-align: left;
     line-height: 1.3;
-    font-family: $font-family3;
   }
 }
 
@@ -465,7 +455,6 @@ input[type="submit"] {
   &__text {
     text-align: center;
     font-size: 4rem;
-    font-family: $font-family3;
     padding: 3rem;
     border-top: 2px dashed black;
   }

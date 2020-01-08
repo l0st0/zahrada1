@@ -60,8 +60,6 @@ a.linkExactActiveClass.linkActiveClass {
   width: 100%;
   background-color: #ffffff;
   position: relative;
-  font-family: $font-family3;
-  font-weight: 500;
   box-shadow: 0 0 5px 2px black;
 
   display: flex;
@@ -140,7 +138,7 @@ a.linkExactActiveClass.linkActiveClass {
     top: 6rem;
     left: 0rem;
     padding-left: 5rem;
-    transition: all 0.35s ease-out;
+    transition: all 0.2s ease;
     font-size: 1.9rem;
 
     @media only screen and (max-width: $bg-sx) {

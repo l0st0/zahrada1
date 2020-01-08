@@ -12,7 +12,6 @@ export default {
 .heading-2 {
   padding: 4rem 2rem 4rem 2rem;
   font-size: 4.5rem;
-  font-family: "Montserrat", sans-serif;
   text-align: center;
 
   @media only screen and (max-width: $bg-sm) {

@@ -99,8 +99,6 @@ export default {
     padding: 1.5rem;
     margin: 0.6rem;
     font-size: 1.6rem;
-    font-family: $font-family3;
-    font-weight: 800;
     letter-spacing: 0.4px;
     color: white;
     box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
@@ -162,8 +160,6 @@ export default {
 
   &-text {
     font-size: 2rem;
-    font-family: $font-family3;
-    font-weight: 600;
     padding-top: 0.9rem;
   }
 
