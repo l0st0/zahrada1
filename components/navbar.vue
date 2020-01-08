@@ -2,7 +2,7 @@
   <div class="main-nav">
     <input type="checkbox" id="nav-check" />
     <nuxt-link linkExactActiveClass:active to="/" class="nav-title">
-      <img v-on:click="fix" class="nav-title__svg" src="@/assets/img/logo.svg" alt />
+      <img v-on:click="fix" class="nav-title__svg" src="@/assets/img/logo1.png" alt />
       <span v-on:click="fix">Záhradné centrum</span>
     </nuxt-link>
     <div class="nav-btn">
@@ -84,9 +84,9 @@ a.linkExactActiveClass.linkActiveClass {
   }
 
   &__svg {
-    width: 26px;
+    width: 40px;
     margin-right: 1.5rem;
-    transform: translateY(-0.3rem);
+    transform: translateY(-0.2rem);
   }
 }
 

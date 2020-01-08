@@ -29,7 +29,7 @@ export default {
       {
         rel: "icon",
         type: "image/png",
-        href: "/logo.png"
+        href: "/logo1.png"
       }
     ]
   },
@@ -81,8 +81,18 @@ export default {
   },
 
   webfontloader: {
-    google: {
-      families: ["Lato: 300", "Montserrat: 400"]
+    // add Google Fonts as "custom" | workaround required
+    custom: {
+      families: [
+        'Montserrat:n4',
+        'Lato:n4'
+      ],
+      urls: [
+        // for each Google Fonts add url + options you want
+        // here add font-display option
+        'https://fonts.googleapis.com/css?family=Montserrat&display=swap',
+        'https://fonts.googleapis.com/css?family=Lato&display=swap'
+      ]
     }
   },
 
