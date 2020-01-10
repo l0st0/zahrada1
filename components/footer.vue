@@ -139,6 +139,10 @@ export default {};
   position: absolute;
   bottom: 0.8rem;
   right: 1rem;
+
+  @media only screen and (max-width: $bg-sm) {
+      display: none;
+    }
 }
 
 .email {
