@@ -39,14 +39,14 @@
     </div>
     <div class="footer-copyright">
       <span class="footer-copyright__text">2020 &copy; Záhradné centrum</span>
-      <div class="me">
+      <!-- <div class="me">
         <div class="email">lostwebsk@gmail.com -</div>
         <img
           class="footer-copyright__svg lazyload"
           data-src="@/assets/img/svg/mylogo.svg"
           alt="lostweb logo"
         />
-      </div>
+      </div>-->
     </div>
   </div>
 </template>
@@ -141,8 +141,8 @@ export default {};
   right: 1rem;
 
   @media only screen and (max-width: $bg-sm) {
-      display: none;
-    }
+    display: none;
+  }
 }
 
 .email {

@@ -271,6 +271,7 @@ export default {
   line-height: 1.5;
   margin: auto;
   text-align: center;
+  color: white;
 }
 
 .image-container {

@@ -191,30 +191,31 @@ export default {};
   overflow: auto;
   padding-top: 0.5rem;
   padding-left: 0.5rem;
+  padding-bottom: 0.5rem;
   margin: 0 auto;
-  box-shadow: 0px 0px 4px 1px rgb(0, 0, 0);
+  //box-shadow: 0px 0px 0px 0px rgb(255, 255, 255);
 
   &::-webkit-scrollbar {
     height: 12px;
   }
 
   &::-webkit-scrollbar-track {
-    background: black;
+    background: rgb(0, 0, 0);
   }
 
   &::-webkit-scrollbar-thumb {
-    background: rgb(199, 199, 199);
+    background: rgb(225, 225, 225);
   }
 
   &::-webkit-scrollbar-thumb:hover {
-    background: rgb(150, 150, 150);
+    background: rgb(255, 255, 255);
   }
 
   &__image {
     width: 13rem;
     height: 12rem;
     transition: all 0.2s;
-    box-shadow: 0px 0px 2px 1px rgb(70, 70, 70);
+    box-shadow: 0px 0px 2px 1px rgb(255, 255, 255);
     border-radius: 3px;
 
     &:hover {
@@ -235,6 +236,7 @@ export default {};
       padding-top: 1rem;
       padding-bottom: 0.4rem;
       text-align: center;
+      color: white;
     }
   }
 }

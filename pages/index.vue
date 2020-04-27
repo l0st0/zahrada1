@@ -7,10 +7,10 @@
           <div class="header-text__2">Huncovce</div>
         </div>
 
-        <div class="objednavky">
+        <!-- <div class="objednavky">
           <img class="objednavky__svg" src="@/assets/img/svg/home/zima2.svg" alt="snow" />
           <div class="objednavky__text">Objednávky príjmame aj v zime!</div>
-        </div>
+        </div>-->
       </div>
       <div class="header-mid">
         <div class="header-svg">
@@ -64,7 +64,7 @@
                   id="subject"
                   name="Správa"
                   placeholder="Správa"
-                  style="height:100px"
+                  style="height:150px"
                   required
                 ></textarea>
               </label>
@@ -72,14 +72,14 @@
             </form>
           </div>
 
-          <div class="prianie">
+          <!-- <div class="prianie">
             <img
               class="prianie__svg lazyload"
               data-src="@/assets/img/svg/christmas.svg"
               alt="christmas"
             />
             <div class="prianie__text">Želáme Vám krásne vianočné sviatky plné šťastia a pohody</div>
-          </div>
+          </div>-->
         </div>
       </div>
     </header>
@@ -419,12 +419,13 @@ input[type="submit"] {
 .main {
   background: linear-gradient(
       to bottom,
-      rgba(rgb(255, 255, 255), 0.8),
-      rgba(rgb(255, 255, 255), 0.8)
+      rgba(rgb(0, 0, 0), 0.3),
+      rgba(rgb(0, 0, 0), 0.3)
     ),
-    url(~assets/img/bga2.webp);
+    url(~assets/img/bgmain.jpg);
 
   background-repeat: repeat;
+  color: white;
 }
 
 .about {
@@ -454,7 +455,7 @@ input[type="submit"] {
     text-align: center;
     font-size: 4rem;
     padding: 3rem;
-    border-top: 2px dashed black;
+    border-top: 2px dashed rgb(255, 255, 255);
   }
 }
 

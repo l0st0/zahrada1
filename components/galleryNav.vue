@@ -101,7 +101,7 @@ export default {
     font-size: 1.6rem;
     letter-spacing: 0.4px;
     color: white;
-    box-shadow: 0px 0px 1px 1px rgb(0, 0, 0);
+    box-shadow: 0px 0px 1px 0px rgb(255, 255, 255);
     min-width: 22rem;
 
     background: linear-gradient(
@@ -117,13 +117,12 @@ export default {
 
     &:hover {
       box-shadow: 0px 0px 5px 2px black;
-      color: black;
+      color: green;
       background: linear-gradient(
-          to bottom,
-          rgba(rgb(255, 255, 255), 0),
-          rgba(rgb(255, 255, 255), 0)
-        ),
-        url(~assets/img/bg.svg);
+        to bottom,
+        rgba(rgb(255, 255, 255), 1),
+        rgba(rgb(255, 255, 255), 1)
+      );
 
       background-repeat: no-repeat;
       background-size: cover;
@@ -134,13 +133,14 @@ export default {
 
 .linkExactActiveClass {
   box-shadow: 0px 0px 5px 2px black;
-  color: black;
+  color: green;
   background: linear-gradient(
       to bottom,
-      rgba(rgb(255, 255, 255), 0),
-      rgba(rgb(255, 255, 255), 0)
-    ),
-    url(~assets/img/bg.svg);
+      rgba(rgb(255, 255, 255), 1),
+      rgba(rgb(255, 255, 255), 1)
+    )
+    /* ,
+    url(~assets/img/bg.svg) */;
 
   background-repeat: no-repeat;
   background-size: cover;

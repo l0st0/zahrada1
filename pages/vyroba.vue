@@ -130,6 +130,7 @@ export default {
     font-size: 2rem;
     text-align: left;
     line-height: 1.3;
+    color: white;
   }
 }
 
@@ -140,6 +141,7 @@ export default {
     align-items: center;
     max-width: 100rem;
     margin: 0 auto;
+    color: white;
   }
 
   &__header {
@@ -180,6 +182,7 @@ export default {
   padding: 0 2rem;
   padding-top: 7rem;
   padding-bottom: 2rem;
+  color: white;
 }
 
 .vyroba-boxes {

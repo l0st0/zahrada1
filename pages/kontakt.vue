@@ -67,6 +67,7 @@ export default {
   line-height: 1.5;
   margin: auto;
   text-align: center;
+  color: white;
 
   @media only screen and (max-width: $bg-sm) {
     font-size: 1.8rem;

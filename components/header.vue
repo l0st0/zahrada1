@@ -13,6 +13,7 @@ export default {
   padding: 4rem 2rem 4rem 2rem;
   font-size: 4.5rem;
   text-align: center;
+  color: white;
 
   @media only screen and (max-width: $bg-sm) {
     font-size: 4rem;
