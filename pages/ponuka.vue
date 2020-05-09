@@ -1,7 +1,7 @@
 <template>
   <div class="container-small">
     <Header header="Aktuálna ponuka výrobkov na predajni" />
-    <p class="ponuka-head">Aktualizované 3.10 2019</p>
+    <p class="ponuka-head">Aktualizované 9.5 2020</p>
 
     <v-gallery :images="list">
       <a class="lightBoxGallery__a" v-for="img in list" :data-image="img.url" v-bind:key="img.id">
@@ -167,91 +167,6 @@ export default {
         {
           thumb: require("~/assets/img/aktualne/27s.jpg"),
           url: require("~/assets/img/aktualne/27.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/28s.jpg"),
-          url: require("~/assets/img/aktualne/28.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/29s.jpg"),
-          url: require("~/assets/img/aktualne/29.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/30s.jpg"),
-          url: require("~/assets/img/aktualne/30.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/31s.jpg"),
-          url: require("~/assets/img/aktualne/31.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/32s.jpg"),
-          url: require("~/assets/img/aktualne/32.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/33s.jpg"),
-          url: require("~/assets/img/aktualne/33.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/34s.jpg"),
-          url: require("~/assets/img/aktualne/34.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/35s.jpg"),
-          url: require("~/assets/img/aktualne/35.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/36s.jpg"),
-          url: require("~/assets/img/aktualne/36.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/37s.jpg"),
-          url: require("~/assets/img/aktualne/37.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/38s.jpg"),
-          url: require("~/assets/img/aktualne/38.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/39s.jpg"),
-          url: require("~/assets/img/aktualne/39.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/40s.jpg"),
-          url: require("~/assets/img/aktualne/40.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/41s.jpg"),
-          url: require("~/assets/img/aktualne/41.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/42s.jpg"),
-          url: require("~/assets/img/aktualne/42.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/43s.jpg"),
-          url: require("~/assets/img/aktualne/43.jpg"),
-          alt: "altanok"
-        },
-        {
-          thumb: require("~/assets/img/aktualne/44s.jpg"),
-          url: require("~/assets/img/aktualne/44.jpg"),
           alt: "altanok"
         }
       ]

@@ -68,16 +68,6 @@ export default {
           alt: "detské ihrisko"
         },
         {
-          thumb: require("~/assets/img/ihriska/8s.jpg"),
-          url: require("~/assets/img/ihriska/8.jpg"),
-          alt: "detské ihrisko"
-        },
-        {
-          thumb: require("~/assets/img/ihriska/9s.jpg"),
-          url: require("~/assets/img/ihriska/9.jpg"),
-          alt: "detské ihrisko"
-        },
-        {
           thumb: require("~/assets/img/ihriska/10s.jpg"),
           url: require("~/assets/img/ihriska/10.jpg"),
           alt: "detské ihrisko"
@@ -100,11 +90,6 @@ export default {
         {
           thumb: require("~/assets/img/ihriska/14s.jpg"),
           url: require("~/assets/img/ihriska/14.jpg"),
-          alt: "detské ihrisko"
-        },
-        {
-          thumb: require("~/assets/img/ihriska/15s.jpg"),
-          url: require("~/assets/img/ihriska/15.jpg"),
           alt: "detské ihrisko"
         },
         {
@@ -175,11 +160,6 @@ export default {
         {
           thumb: require("~/assets/img/ihriska/29s.jpg"),
           url: require("~/assets/img/ihriska/29.jpg"),
-          alt: "detské ihrisko"
-        },
-        {
-          thumb: require("~/assets/img/ihriska/30s.jpg"),
-          url: require("~/assets/img/ihriska/30.jpg"),
           alt: "detské ihrisko"
         },
         {
